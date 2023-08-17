@@ -1,4 +1,4 @@
-import "./header.css";
+import "./header.scss";
 import headerHTML from "./header.html?raw";
 
 export const componentId = "header";

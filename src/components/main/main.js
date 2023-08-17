@@ -1,4 +1,4 @@
-import "./main.css";
+import "./main.scss";
 import mainHTML from "./main.html?raw";
 
 export const componentId = "main";
