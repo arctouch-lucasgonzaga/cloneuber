@@ -1,5 +1,5 @@
-import "./styles.css";
-import mainHTML from "./index.html?raw";
+import "./main.css";
+import mainHTML from "./main.html?raw";
 
 export const componentId = "main";
 

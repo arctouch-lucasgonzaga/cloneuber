@@ -1,5 +1,5 @@
-import "./styles.css";
-import headerHTML from "./index.html?raw";
+import "./header.css";
+import headerHTML from "./header.html?raw";
 
 export const componentId = "header";
 
