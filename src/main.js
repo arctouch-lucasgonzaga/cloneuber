@@ -1,15 +1,14 @@
 import "./styles/index.css";
-import { components } from "./components";
+import header from "./components/header";
+import main from "./components/main";
 
 async function loadComponents() {
-  Object.entries(components).forEach(([prop, val]) => {
-    document.querySelector("#app").innerHTML =
-      document.querySelector("#app").innerHTML +
-      `
-      <div id="${prop}"></div>
-      `;
-    val();
-  });
+  document.querySelector("#app").innerHTML = `
+    <div id="${header.componentId}"></div>
+    <div id="${main.componentId}"></div>
+  `;
+  header.loadComponent();
+  main.loadComponent();
 }
 
 loadComponents();
