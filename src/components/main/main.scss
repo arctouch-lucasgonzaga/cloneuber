@@ -1,238 +1,238 @@
 
-.content-wrap {
-    position: absolute;
-    width: 100%;
-  }
+// .content-wrap {
+//     position: absolute;
+//     width: 100%;
+//   }
   
-  .icons-list {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    height: 123px;
-  }
+//   .icons-list {
+//     display: flex;
+//     flex-direction: row;
+//     position: relative;
+//     text-align: center;
+//     align-items: center;
+//     width: 100%;
+//     height: 123px;
+//   }
   
-  .nav-icon-list {
-    display: flex;
-    width: 100%;
-    gap: 30px;
-    padding-bottom: 20px;
-    padding-top: 28px;
-    padding-right: 12px;
-    padding-left: 12px;
-  }
+//   .nav-icon-list {
+//     display: flex;
+//     width: 100%;
+//     gap: 30px;
+//     padding-bottom: 20px;
+//     padding-top: 28px;
+//     padding-right: 12px;
+//     padding-left: 12px;
+//   }
   
-  .first-icon-list {
-    width: 81px;
-    height: 100%;
-    color: #000;
-    text-align: center;
-  }
+//   .first-icon-list {
+//     width: 81px;
+//     height: 100%;
+//     color: #000;
+//     text-align: center;
+//   }
   
-  .second-icon-list {
-    width: 81px;
-    height: 100%;
-    color: #000;
-    text-align: center;
-  }
+//   .second-icon-list {
+//     width: 81px;
+//     height: 100%;
+//     color: #000;
+//     text-align: center;
+//   }
   
-  .third-icon-list {
-    width: 81px;
-    height: 100%;
-    color: #000;
-    text-align: center;
-  }
+//   .third-icon-list {
+//     width: 81px;
+//     height: 100%;
+//     color: #000;
+//     text-align: center;
+//   }
   
-  .fa-signal {
-    width: 100%;
-    height: 100%;
-    color: #000;
-    font-size: 13px;
-  }
+//   .fa-signal {
+//     width: 100%;
+//     height: 100%;
+//     color: #000;
+//     font-size: 13px;
+//   }
   
-  .fa-car {
-    width: 100%;
-    height: 100%;
-    color: #000;
-    font-size: 13px;
-  }
+//   .fa-car {
+//     width: 100%;
+//     height: 100%;
+//     color: #000;
+//     font-size: 13px;
+//   }
   
-  .fa-key {
-    width: 100%;
-    height: 100%;
-    color: #000;
-    font-size: 13px;
-  }
+//   .fa-key {
+//     width: 100%;
+//     height: 100%;
+//     color: #000;
+//     font-size: 13px;
+//   }
   
-  .first-icon-text {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 8px;
-    font-family: "Montserrat", sans-serif;
-  }
+//   .first-icon-text {
+//     color: #000;
+//     font-size: 14px;
+//     font-weight: 500;
+//     margin-top: 8px;
+//     font-family: "Montserrat", sans-serif;
+//   }
   
-  .second-icon-text {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 8px;
-    font-family: "Montserrat", sans-serif;
-  }
+//   .second-icon-text {
+//     color: #000;
+//     font-size: 14px;
+//     font-weight: 500;
+//     margin-top: 8px;
+//     font-family: "Montserrat", sans-serif;
+//   }
   
-  .third-icon-text {
-    color: #000;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 8px;
-    font-family: "Montserrat", sans-serif;
-  }
+//   .third-icon-text {
+//     color: #000;
+//     font-size: 14px;
+//     font-weight: 500;
+//     margin-top: 8px;
+//     font-family: "Montserrat", sans-serif;
+//   }
   
-  .menu-bar {
-    display: none;
-  }
+//   .menu-bar {
+//     display: none;
+//   }
   
-  .content-presentation {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    padding-left: 2rem;
-    padding-right: 1rem;
-    gap: 2em;
-  }
+//   .content-presentation {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100%;
+//     padding-left: 2rem;
+//     padding-right: 1rem;
+//     gap: 2em;
+//   }
   
-  .content-assuma {
-    font-size: 3em;
-    font-family: "Instrument Sans", sans-serif;
-  }
+//   .content-assuma {
+//     font-size: 3em;
+//     font-family: "Instrument Sans", sans-serif;
+//   }
   
-  .sub-dirija {
-    font-family: "Poppins", sans-serif;
-    font-size: 1.4rem;
-  }
+//   .sub-dirija {
+//     font-family: "Poppins", sans-serif;
+//     font-size: 1.4rem;
+//   }
   
-  .button-cadastre-content {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 25px;
-    padding-right: 25px;
-    border-radius: 8px;
-    background-color: black;
-    color: white;
-    font-size: 1rem;
-  }
+//   .button-cadastre-content {
+//     padding-top: 14px;
+//     padding-bottom: 14px;
+//     padding-left: 25px;
+//     padding-right: 25px;
+//     border-radius: 8px;
+//     background-color: black;
+//     color: white;
+//     font-size: 1rem;
+//   }
   
-  .description-platform {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-    padding: none;
-  }
+//   .description-platform {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: auto;
+//     padding: none;
+//   }
   
-  .imagem-senhor {
-    position: relative;
-    width: 100%;
-    top: 480px;
-  }
+//   .imagem-senhor {
+//     position: relative;
+//     width: 100%;
+//     top: 480px;
+//   }
   
-  .image-city {
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
-    width: 100%;
-  }
+//   .image-city {
+//     -o-object-fit: cover;
+//        object-fit: cover;
+//     position: relative;
+//     width: 100%;
+//   }
   
-  .imagem-senhordirigindo {
-    -o-object-fit: cover;
-       object-fit: cover;
-    position: relative;
-    width: 100%;
-  }
+//   .imagem-senhordirigindo {
+//     -o-object-fit: cover;
+//        object-fit: cover;
+//     position: relative;
+//     width: 100%;
+//   }
   
-  .tabpanel {
-    padding: 30px;
-    background-color: #fff;
-    top: 574px;
-    width: 40%;
-    position: absolute;
-  }
+//   .tabpanel {
+//     padding: 30px;
+//     background-color: #fff;
+//     top: 574px;
+//     width: 40%;
+//     position: absolute;
+//   }
   
-  .icons-wrap {
-    display: flex;
-  }
+//   .icons-wrap {
+//     display: flex;
+//   }
   
-  .tab-content-wrap {
-    display: flex;
-    flex-direction: column;
-  }
+//   .tab-content-wrap {
+//     display: flex;
+//     flex-direction: column;
+//   }
   
-  @media screen and (max-width: 414px) {
-    .header-menu {
-      display: flex;
-      padding: 12px 12px;
-      height: 40px;
-      width: 100%;
-      height: -1%;
-    }
-    .menu {
-      align-items: center;
-      text-align: center;
-      width: 100%;
-    }
-    .menu-itens {
-      width: 100%;
-    }
-    .icon-menu {
-      text-align: center;
-      width: 15%;
-    }
-    .text-icon-menu {
-      padding: 0 50px 0 0;
-      font-size: 20px;
-      font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
-    .menu-login {
-      padding: 0 0 0 6vh;
-    }
-    .menu-text-login {
-      font-size: 1.5vh;
-    }
-    .menu-cadastre {
-      padding: 0 0 0 2vh;
-    }
-    .menu-text-cadastre {
-      font-size: 1.5vh;
-      padding: 11px 18px;
-      background-color: #fff;
-      color: #000;
-      border-radius: 30px;
-      font-weight: 900;
-    }
-    .menu-bar {
-      display: flex;
-      padding: 0 0 0 0.8rem;
-    }
-    .fa-bars {
-      width: 100%;
-      color: #fff;
-    }
-    .itens-menu-right {
-      display: flex;
-      justify-content: center;
-    }
-    .itens-menu-left {
-      width: 15%;
-    }
-    .menu-company {
-      display: none;
-    }
-    .menu-safety {
-      display: none;
-    }
-    .menu-help {
-      display: none;
-    }
-  }/*# sourceMappingURL=index.css.map */
+//   @media screen and (max-width: 414px) {
+//     .header-menu {
+//       display: flex;
+//       padding: 12px 12px;
+//       height: 40px;
+//       width: 100%;
+//       height: -1%;
+//     }
+//     .menu {
+//       align-items: center;
+//       text-align: center;
+//       width: 100%;
+//     }
+//     .menu-itens {
+//       width: 100%;
+//     }
+//     .icon-menu {
+//       text-align: center;
+//       width: 15%;
+//     }
+//     .text-icon-menu {
+//       padding: 0 50px 0 0;
+//       font-size: 20px;
+//       font-family: system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+//     }
+//     .menu-login {
+//       padding: 0 0 0 6vh;
+//     }
+//     .menu-text-login {
+//       font-size: 1.5vh;
+//     }
+//     .menu-cadastre {
+//       padding: 0 0 0 2vh;
+//     }
+//     .menu-text-cadastre {
+//       font-size: 1.5vh;
+//       padding: 11px 18px;
+//       background-color: #fff;
+//       color: #000;
+//       border-radius: 30px;
+//       font-weight: 900;
+//     }
+//     .menu-bar {
+//       display: flex;
+//       padding: 0 0 0 0.8rem;
+//     }
+//     .fa-bars {
+//       width: 100%;
+//       color: #fff;
+//     }
+//     .itens-menu-right {
+//       display: flex;
+//       justify-content: center;
+//     }
+//     .itens-menu-left {
+//       width: 15%;
+//     }
+//     .menu-company {
+//       display: none;
+//     }
+//     .menu-safety {
+//       display: none;
+//     }
+//     .menu-help {
+//       display: none;
+//     }
+//   }/*# sourceMappingURL=index.css.map */
