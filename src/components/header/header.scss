@@ -1,86 +1,145 @@
-
+* {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+}
+#size-font{
+  font-size: 14px;
+  position: relative;
+}
 .header-menu {
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    height: 64px;
-    width: 100%;
-    font-size: 15px;
-    font-family: "Helvetica Neue", sans-serif;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.menu {
+  background-color: #000;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-left: 13%;
+}
+
+.menu-itens {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.itens-menu-left {
+  display: flex;
+  height: 100%;
+  width: 25%;
+}
+
+.text-icon-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  top: 15px;
+  font-size: 25px;
+}
+
+.texts-menu-left {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  gap: 33px;
+  margin-left: 30px;
+  align-items: center;
+}
+
+.itens-menu-mobile {
+  display: none;
+}
+.itens-menu-right{
+  display: flex;
+  width: 40%;
+  align-items: center;
+  margin-left: 40%;
+  gap: 30px;
+}
+.svg-style{
+  position: relative;
+  top: 3px;
+}
+
+.menu-singup{
+  padding: 8px 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 16px;
+}
+@media screen and (max-width: 1135px) {
+  .itens-menu-right{
+    display: none;
   }
-  
-  .menu {
-    background-color: #000;
-    display: flex;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    height: 100%;
-    width: 100%;
-  }
-  .menu .menu-itens .icon-menu .text-icon-menu {
-    display: flex;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    margin-left: 10px;
-    gap: unset;
-  }
-  
-  .menu-itens {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
-  
   .itens-menu-left {
+    display: none;
+  }
+
+  .text-icon-menu {
+    font-size: 18px;
+  }
+
+  .texts-menu-left {
+    display: none;
+  }
+
+  .itens-menu-mobile {
+    display: flex;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+  }
+  .icon-menu{
+    position: relative;
+    right: 30px;
+    margin-top: 6px;
+  }
+  .menu-mobile-itens-right {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    gap: 30px;
-    margin-left: 50px;
-  }
-  
-  .text-menu-company {
-    color: white;
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  .text-menu-safety {
-    color: white;
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  .text-menu-help {
-    color: white;
-    font-size: 15px;
-    text-align: center;
-  }
-  
-  .itens-menu-right {
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
-    height: 100%;
+    margin-right: 30px;
+    gap: 20px;
+    font-size: 14px;
   }
-  
-  .menu-text-login {
-    color: white;
-    font-size: 11px;
-  }
-  
-  .menu-cadastre {
-    padding: 0 0 0 2vh;
-  }
-  
-  .menu-text-cadastre {
-    font-size: 11px;
-    padding: 11px 18px;
+  .singup-mobile{
+    padding: 9px 12px;
     background-color: #fff;
     color: #000;
-    border-radius: 30px;
-    font-weight: 900;
+    border-radius: 16px;
   }
+  .menu{
+    margin-left: 6%;
+  }
+}
+@media  screen and (min-width: 1140px) and (max-width: 1518px) {
+  .menu{
+    margin-left: 0%;
+  }
+  .itens-menu-left{
+    width: 32%;
+    margin-left: 3%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header-menu{
+    background-color: green;
+  }
+  .menu{
+    margin-left: unset;
+  }
+  .icon-menu{
+    margin-left: 10%;
+  }
+}
