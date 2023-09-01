@@ -79,6 +79,10 @@
 .menu-products {
   float: left;
   overflow: hidden;
+
+  .show {
+    display: block;
+  }
 }
 
 .menu-products .dropdown-button {
