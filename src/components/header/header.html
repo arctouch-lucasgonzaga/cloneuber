@@ -33,7 +33,7 @@
           </svg>
           <a id="size-font">PT-BR</a>
         </li>
-        <li class="menu-products">
+        <div class="menu-products">
           <svg
             width="14"
             height="14"
@@ -49,8 +49,20 @@
               fill="white"
             ></path>
           </svg>
-          <a id="size-font">Products</a>
-        </li>
+          <a id="size-font" class="dropdown-button" onclick="myFunction()">Products</a>
+          <div class="dropdown-products_content" id="productsDropContent">
+            <li class="drop-home">Home</li>
+            <li class="drop-ride">Ride</li>
+            <li class="drop-drive">Drive</li>
+            <li class="drop-eat">Eat</li>
+            <li class="drop-merchants">Merchants</li>
+            <li class="drop-freight">Freight</li>
+            <li class="drop-bike_scoot">Bike & scoot</li>
+            <li class="drop-transit">Transit</li>
+            <li class="drop-business">Business</li>
+            <li class="drop-money">Money</li>
+          </div>
+        </div>
         <li class="login-mobile">Log in</li>
         <li class="menu-singup">Sing Up</li>
       </div>
@@ -61,7 +73,7 @@
         <ul class="menu-mobile-itens-right">
           <li class="login-mobile" id="size-font">Log in</li>
           <li class="singup-mobile" id="size-font">Sing Up</li>
-          <i class="fa-solid fa-bars fa-lg" style="color: #ffffff"></i>
+          <i class="fa-solid fa-bars fa-lg" style="color: #ffffff" id="menu-hamburguer"></i>
         </ul>
       </div>
     </ul>
