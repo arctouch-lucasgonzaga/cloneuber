@@ -1,0 +1,81 @@
+*{
+    text-decoration: none;
+    bottom: unset;
+    color: #fff;
+}
+.button-company{
+    padding: 10px 7px;
+    display: flex;
+    background-color: unset;
+    color: #fff;
+    border: unset;
+    font-size: 16px;
+}
+.svg-company{
+    display: flex;
+    align-items: center;
+    margin-left: 9px;
+}
+.content-dropdown{
+    display: flex;
+    align-items: center;
+    color: #000 !important;
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    padding: 0px 0px;
+}
+.menu-company {
+    float: right;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+  
+    .show {
+      display: flex;
+      flex-direction: column;
+      border-radius: 0px 0px 12px 12px;
+      margin-top: 22px;
+    }
+  }
+  
+  .menu-company .dropdown-button {
+    cursor: pointer !important;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #f9f9f9;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .classCompany-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    max-height: 310px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .classCompany-content li {
+    font-size: 12px;
+    float: none;
+    color: #656565 !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .classCompany-content li:hover {
+    background-color: #ddd;
+  }
+.button-company:hover{
+    border: 10px;
+    border-radius: 16px;
+    border-color: #393838;
+    background-color: #393838;
+
+}
