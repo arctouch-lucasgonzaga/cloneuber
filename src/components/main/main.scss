@@ -8,6 +8,8 @@
 //   background-color: #f0f0f0;
 // }
 // ​
+
+/* Estilos padrão que se aplicam a ambos mobile e desktop */
 #container-banner-image {
   display: block;
   width: 100%;
@@ -20,6 +22,22 @@
   width: 100%;
   height: 675px;
 }
+
+/*tamanhos de tela */
+@media screen and (max-width: 765px) {
+  #container-banner {
+    height: 400px; /* Ajuste a altura para dispositivos móveis conforme necessário */
+   background-image: url(https://arctouch.slack.com/archives/D0506837MQR/p1694196270050839?thread_ts=1694195652.802549&cid=D0506837MQR)
+  }
+}
+
+/* Estilos específicos para desktops (tamanhos de tela maiores ou iguais a 768px) */
+@media screen and (min-width: 768px) {
+  /* Mantenha a altura original para desktops */
+}
+
+
+
 
 // .content-wrap {
 //     position: absolute;
