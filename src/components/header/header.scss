@@ -50,7 +50,7 @@
   position: relative;
   display: flex;
   justify-content: space-around;
-  gap: 33px;
+  gap: 22px;
   margin-left: 30px;
   align-items: center;
 }
@@ -63,7 +63,7 @@
   width: 40%;
   align-items: center;
   margin-left: 40%;
-  gap: 30px;
+  gap: 17px;
 }
 .svg-style{
   position: relative;
@@ -75,6 +75,28 @@
   background-color: #fff;
   color: #000;
   border-radius: 16px;
+  cursor: pointer;
+}
+
+.menu-singup:hover{
+  background-color: #cfcfcf;
+  transition-duration: 0.5s;
+}
+
+.menu-login{
+  padding: 8px 10px;
+  border: unset;
+  border-color: unset;
+  background-color: unset;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.menu-login:hover{
+  padding: 8px 10px;
+  border-radius: 16px;
+  background-color: #3535358e;
+  transition-duration: 0.5s;
 }
 
 @media screen and (max-width: 1135px) {

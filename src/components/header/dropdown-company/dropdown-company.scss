@@ -72,10 +72,11 @@
   .classCompany-content li:hover {
     background-color: #ddd;
   }
-.button-company:hover{
-    border: 10px;
-    border-radius: 16px;
-    border-color: #393838;
-    background-color: #393838;
+  .button-company:hover{
+      border: 10px;
+      border-radius: 16px;
+      border-color: #393838;
+      background-color: #393838;
+      cursor: pointer;
 
-}
+  }
