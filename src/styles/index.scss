@@ -1,13 +1,15 @@
-@import './fonts.scss';
-@import './variables';
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
+@import "./fonts.scss";
+@import "./variables";
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: UberMove, UberMoveText, system-ui, "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
 }
 body {
-	background-color: $background-color_1;
+  background-color: $background-color_1;
 }
 .main {
-	height: 100%;
+  height: 100%;
 }
