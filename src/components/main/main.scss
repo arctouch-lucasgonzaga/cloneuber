@@ -10,32 +10,51 @@
 // ​
 
 /* Estilos padrão que se aplicam a ambos mobile e desktop */
+/*  container da imagem de fundo */
 #container-banner-image {
   display: block;
   width: 100%;
-  height: 100%;
   object-fit: cover;
+  position: relative; 
 }
 
+/* quadrado branco */
+.square-overlay {
+  position: absolute;
+  background-color: rgb(26, 1, 1);
+  top: 40px;
+  left: 0;
+  width: 200px;
+  height: 100px;
+}
+/*icone de viagem ou entrega*/
+.icone-de-viagens
+{
+  position: absolute;
+  background-color: black;
+  top: 40px;
+  left: 0;
+  width: 300px;
+  height: 100px;
+}
 #container-banner {
   position: absolute;
   width: 100%;
   height: 675px;
 }
 
-/*tamanhos de tela */
+/* Tamanhos de tela */
 @media screen and (max-width: 765px) {
   #container-banner {
-    height: 400px; /* Ajuste a altura para dispositivos móveis conforme necessário */
-   background-image: url(https://arctouch.slack.com/archives/D0506837MQR/p1694196270050839?thread_ts=1694195652.802549&cid=D0506837MQR)
+    height: 400px; /* Ajuste de altura para dispositivos móveis conforme necessário */
+    background-image: url('https://arctouch.slack.com/archives/D0506837MQR/p1694196270050839?thread_ts=1694195652.802549&cid=D0506837MQR');
   }
 }
 
 /* Estilos específicos para desktops (tamanhos de tela maiores ou iguais a 768px) */
 @media screen and (min-width: 768px) {
-  /* Mantenha a altura original para desktops */
+  /* Manter a altura original para desktops */
 }
-
 
 
 
