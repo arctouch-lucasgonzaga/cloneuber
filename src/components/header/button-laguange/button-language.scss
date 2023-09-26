@@ -20,33 +20,32 @@ $secundaryColor : #000;
 .language-product-content {
     display: none;
     position: absolute;
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
     background-color: red;
     margin-top: 22px;
     z-index: 2;
     right: 0;
-    padding: 100vw;
+    padding: 100%;
+
     
             &.show-content {
                 display: flex;
                 right: 0;
                 color: $secundaryColor;
             }
-
     #language-selection {
-        width: 100vw;
-        height: 100vw;
+        width: 100%;
+        height: 100%;
 
         .box-texts-language {
             display: flex;
-            width: 100vw;
-            height: 100vw;
+            width: 100%;
+            height: 100%;
 
             .title-language-selection {
                 color: $secundaryColor;
                 font-size: 30px;
-                position: absolute;
             }
         }
 
