@@ -6,10 +6,7 @@ export function loadComponent() {
     document.querySelector(`#${componentId}`).innerHTML = headerHTML;
     document.querySelector(`.button-company`).addEventListener("click", () => {
       document.getElementById("company-content-dropdown").classList.toggle("show");
-    // let botaoCompany = document.querySelector(`.button-company`)
-    // botaoCompany.addEventListener("mouseover", ()=>{
-    //     botaoCompany.classList.toggle("hover-button")
-    // })
+
     });
   }
 

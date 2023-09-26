@@ -59,11 +59,17 @@
   display: none;
 }
 .itens-menu-right{
+  position: relative;
+  z-index: 1;
   display: flex;
-  width: 40%;
+  width: 100%;
   align-items: center;
   margin-left: 40%;
   gap: 17px;
+}
+.button-language{
+  z-index: 99px;
+  width: 100%;
 }
 .svg-style{
   position: relative;
