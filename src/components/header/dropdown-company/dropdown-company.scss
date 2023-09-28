@@ -1,3 +1,4 @@
+$color1 : #393838;
 *{
     text-decoration: none;
     bottom: unset;
@@ -75,7 +76,6 @@
 .button-company:hover{
     border: 10px;
     border-radius: 16px;
-    border-color: #393838;
-    background-color: #393838;
-
+    border-color: $color1;
+    background-color: $color1;
 }
