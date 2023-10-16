@@ -11,6 +11,7 @@
     padding: 0px 0px;
 }
 .menu-products {
+    cursor: pointer;
     float: right;
     overflow: hidden;
     width: 100%;
@@ -26,7 +27,6 @@
   }
   
   .menu-products .dropdown-button {
-    cursor: pointer;
     font-size: 16px;  
     border: none;
     outline: none;

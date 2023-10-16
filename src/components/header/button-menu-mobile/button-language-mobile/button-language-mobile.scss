@@ -1,0 +1,75 @@
+$primaryColor : #000;
+$secondaryColor : #fff;
+$tertiarycolor : #E7E7E7;
+.menu-button-language{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.text-button-language{
+    color: $primaryColor;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.language-product-content {
+    display: none;
+    position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: $primaryColor;
+  margin-top: 22px;
+  z-index: 2;
+  
+  &.show-content {
+      display: flex;
+      right: 0;
+      color: $secondaryColor;
+    }
+    
+#language-selection {
+    width: 100vw;
+
+    .box-texts-language {
+        display: flex;
+        width: 100%;
+        margin-top: 130px;
+        padding: 0 20%;
+        
+        .title-language-selection {
+            color: $secondaryColor;
+            font-size: 30px;
+            position: absolute;
+            
+        }
+    }
+}       
+}
+.buttons-language-selection{
+    display: none;
+}
+.button-selection-display{
+    display: flex !important;
+}
+.selection-button1, .selection-button2{
+    display: flex;
+    width: 250px;
+    height: 45px;
+    text-align: left;
+    align-items: center;
+    margin-right: 70px;
+    font-size: 20px;
+    color: $secondaryColor;
+    margin-top: 105px;
+
+}
+.selection-button1:hover, .selection-button2:hover{
+    background-color: $tertiarycolor;
+    border-radius: 10px;
+}
+.button-exit{
+    display: flex;
+    width: 26%;
+    height: 100%;
+    justify-content: flex-end;
+}

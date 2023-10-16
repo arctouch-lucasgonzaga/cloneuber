@@ -5,7 +5,7 @@ export const componentId = "dropdown-product";
 
 export function loadComponent() {
   document.querySelector(`#${componentId}`).innerHTML = headerHTML;
-  document.querySelector(`#button`).addEventListener("click", () => {
+  document.querySelector(`.menu-products`).addEventListener("click", () => {
     document.getElementById("productsDropContent").classList.toggle("show");
   });
 }

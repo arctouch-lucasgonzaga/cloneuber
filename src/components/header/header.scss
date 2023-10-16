@@ -129,7 +129,6 @@
   }
   .icon-menu{
     position: relative;
-    right: 30px;
     margin-top: 6px;
   }
   .menu-mobile-itens-right {
@@ -138,7 +137,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
     gap: 20px;
     font-size: 14px;
   }
@@ -169,6 +168,6 @@
     margin-left: unset;
   }
   .icon-menu{
-    margin-left: 10%;
+    margin-left: 5%;
   }
 }
