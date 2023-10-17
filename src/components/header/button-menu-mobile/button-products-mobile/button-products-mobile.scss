@@ -15,17 +15,17 @@
 }
 .content-menu-products{
     display: none;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 20px;
 }
 .show-content_button-products{
     display: flex;
     position: absolute;
-    margin-top: 15px;
     width: 100%;
     height: 100%;
     right: 0;
-    left: 25px;
     font-size: 35px;     
-    overflow: hidden; 
 }
 .dropdown-button{
     font-size: 16px;
@@ -33,4 +33,7 @@
     padding-bottom: 14px;
     padding-left: 16px;
     padding-right: 16px;
+}
+.text-style-dropdown{
+    font-size: 25px;
 }

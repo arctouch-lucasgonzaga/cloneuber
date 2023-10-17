@@ -5,10 +5,11 @@ export const componentId = "buttonProductsMobile"
 export function loadComponent(){
     document.querySelector(`#${componentId}`).innerHTML = headerHTML;
     document.querySelector(`#button-products`).addEventListener("click", () => {
-        document.getElementById("conteudo-botao").style.display = "none";
-        if(document.getElementById("conteudo-botao").style.display = "none"){
-            document.getElementById("content-menu-products").classList.toggle("show-content_button-products");
-        }
+        document.getElementById("content-menu-products").style.display = "flex";
+        document.getElementById("links-button").style.display = "none";
+        document.getElementById("buttonLanguageMobile").style.display ="none";
+        document.getElementById("button-products").style.display ="none";
+        document.getElementById("content-menu-products").classList.toggle("show-content_button-products");
     })
 }
 
