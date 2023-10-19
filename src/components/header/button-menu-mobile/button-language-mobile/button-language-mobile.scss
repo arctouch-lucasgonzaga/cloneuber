@@ -1,75 +1,67 @@
 $primaryColor : #000;
 $secondaryColor : #fff;
 $tertiarycolor : #E7E7E7;
-.menu-button-language{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+.menu-button-language-mobile{
     display: flex;
     align-items: center;
     margin-top: 30px;
     margin-left: 10px;
 }
-.text-button-language{
+.text-button-language-mobile{
     color: $primaryColor;
     font-size: 10px;
     margin-left: 10px;
 }
-.language-product-content {
+.language-product-content-mobile {
     display: none;
     position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: $primaryColor;
-  margin-top: 22px;
-  z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    color: $primaryColor;
+    margin-top: 22px;
+    z-index: 2;
   
-  &.show-content {
+  &.show-content-mobile {
       display: flex;
       right: 0;
-      color: $secondaryColor;
+      color: $primaryColor;
     }
     
-#language-selection {
+#language-selection-mobile {
     width: 100vw;
 
-    .box-texts-language {
+    .box-texts-language-mobile {
         display: flex;
         width: 100%;
-        margin-top: 130px;
-        padding: 0 20%;
         
-        .title-language-selection {
-            color: $secondaryColor;
-            font-size: 30px;
+        .title-language-selection-mobile {
+            font-family: 'Open Sans', sans-serif;
+            color: $primaryColor;
+            font-size: 28px;
             position: absolute;
-            
+            margin-top: 28px;
+            margin-right: 28px;
         }
     }
 }       
 }
-.buttons-language-selection{
-    display: none;
-}
-.button-selection-display{
-    display: flex !important;
-}
-.selection-button1, .selection-button2{
-    display: flex;
-    width: 250px;
-    height: 45px;
-    text-align: left;
-    align-items: center;
-    margin-right: 70px;
+.buttons-language-selection-mobile{
+    display: flex;  
+    flex-direction: column;
+    margin-top: 150px;
     font-size: 20px;
-    color: $secondaryColor;
-    margin-top: 105px;
-
+    font-weight: 700;
+    gap: 40px;
 }
-.selection-button1:hover, .selection-button2:hover{
+.selection-button1-mobile, .selection-button2-mobile{
+    display: flex;
+    color: $primaryColor;
+}
+.selection-button1-mobile:hover, .selection-button2-mobile:hover{
     background-color: $tertiarycolor;
     border-radius: 10px;
 }
-.button-exit{
-    display: flex;
-    width: 26%;
-    height: 100%;
-    justify-content: flex-end;
+.button-exit-mobile{
+    display: none;
 }

@@ -12,6 +12,10 @@ export function loadComponent(){
     document.getElementById("buttonLanguageMobile").style.display ="flex";
     document.getElementById("button-products").style.display ="flex";
     document.getElementById("content-menu-products").style.display = "none";
+    document.getElementById("button-language-mobile").style.display = "flex";
+    document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile");
+    document.getElementById("lista-drop").classList.remove("show");
+    document.getElementById("button-company-mobile").classList.remove("margin-force");   
     })
     buttonCompanyMobile.loadComponent();
     buttonProductsMobile.loadComponent();
