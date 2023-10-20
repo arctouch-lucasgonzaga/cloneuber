@@ -39,9 +39,46 @@ $primarycolor: #000;
     font-size: 25px;
     font-family: "Helvetica Neue", sans-serif;
 }
-
+.footer-link-list-content{
+    display: flex;
+}
+.list-company{
+    margin-top: 70px;
+    width: 120px;
+}
+.itens-list-company{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+.list-global-citizenship,.list-travel, .list-products{
+    margin-top: 70px;
+    margin-left: 180px;
+}
+.title-global-citizenship, .title-travel, .title-products, .title-company{
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 20px;
+}
+.itens-list-global, .itens-list-travel, .itens-list-products{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+}
+.links-global, .links-travel, .links-products, .links-company{
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.links-global:hover, .links-travel:hover, .links-products:hover, .links-company:hover{
+    color: #999;
+}
 @media screen and (max-width : 768px) {
 
+    .footer-space{
+        height: 102%;
+    }
     .content-footer{
         display: flex;
         flex-direction: column;
@@ -61,5 +98,11 @@ $primarycolor: #000;
     }
     .toplist{
         flex-direction: column;
+    }
+    .footer-link-list-content{
+        flex-direction: column;
+    }
+    .list-global-citizenship,.list-travel, .list-products{
+        margin-left: unset;
     }
 }
