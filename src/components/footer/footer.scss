@@ -39,3 +39,27 @@ $primarycolor: #000;
     font-size: 25px;
     font-family: "Helvetica Neue", sans-serif;
 }
+
+@media screen and (max-width : 768px) {
+
+    .content-footer{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 15px;
+    }
+    .right-itens{
+        width: unset;
+        margin-top: 20px;
+    }
+    .left-itens{
+        width: unset;
+        margin-top: 80px;
+    }
+    .adress-uber{
+        width: unset;
+    }
+    .toplist{
+        flex-direction: column;
+    }
+}
