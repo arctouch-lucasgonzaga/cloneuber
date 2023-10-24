@@ -8,6 +8,7 @@ $primarycolor:#000;
     display: flex;
     width: 100%;
     margin-bottom: 90px;
+    overflow-x: hidden;
 }
 .content-box{
     display: flex;
@@ -18,7 +19,7 @@ $primarycolor:#000;
     display: flex;
     flex-direction: column;
 }
-.image-content-initial{
+.image-content-initial-desktop{
     width: 600px;
     height: 600px;
 }
@@ -69,4 +70,50 @@ $primarycolor:#000;
 
 .horizontal-line:hover {
     background-color: $primarycolor;
+}
+.image-content-initial-mobile{
+    display: none;
+}
+@media screen and (max-width : 768px){
+    .image-content-initial-desktop{
+        display: none;
+    }
+    .image-content-initial-mobile{
+        display: block;
+    }
+    .content-box{
+        flex-direction: column;
+        padding: unset;
+        padding: 40px 24px 40px 24px;
+        width: 88%;
+    }
+    .texts-content-initial{
+        flex-direction: column;
+    }
+    .title-content-initial{
+        padding: unset;
+        font-size: 36px;
+    }
+    .subtitle-content-initial{
+        padding: unset;
+        margin-top: 20px;
+    }
+    .button-content-initial{
+        margin: unset;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .button-singin{
+        flex-wrap: unset;
+        margin-left: unset;
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    .horizontal-line{
+        display: none;
+    }
+    .image-content-initial{
+        width: unset;
+        height: unset;
+    }
 }
