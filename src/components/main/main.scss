@@ -1,3 +1,72 @@
+$primarycolor:#000;
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
 .espaco{
     height: 100vh;
+}
+.content-initial{
+    display: flex;
+    width: 100%;
+    margin-bottom: 90px;
+}
+.content-box{
+    display: flex;
+    width: 100%;
+    padding: 0 260px 0 260px;
+}
+.texts-content-initial{
+    display: flex;
+    flex-direction: column;
+}
+.image-content-initial{
+    width: 600px;
+    height: 600px;
+}
+.title-content-initial{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    padding: 95px 95px 0px 95px;
+    color: $primarycolor;
+}
+.subtitle-content-initial{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    padding: 0px 55px 0px 95px;
+    margin-top: 50px;
+    color: $primarycolor;
+}
+.button-content-initial{
+    display: flex;
+    width: 100%;
+    margin-left: 95px;
+    margin-top: 50px;
+}
+.btn-content-initial{
+    color: #fff;
+    background-color: $primarycolor;
+    padding: 20px;
+    border-radius: 8px;
+    width: 135px;
+    height: 50px;
+    font-size: 12px;
+}
+.button-singin{
+    display: flex;
+    cursor: pointer;
+    color: $primarycolor;
+    align-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 35px;
+}
+.horizontal-line {
+    width: 100%;
+    height: 2px; 
+    background-color: #a9a9a9;
+    transition: background-color 0.3s;
+}
+
+.horizontal-line:hover {
+    background-color: $primarycolor;
 }
