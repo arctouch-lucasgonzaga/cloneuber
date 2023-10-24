@@ -1,0 +1,67 @@
+$primaryColor : #000;
+$secondaryColor : #fff;
+$tertiarycolor : #E7E7E7;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+.menu-button-language-mobile{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.text-button-language-mobile{
+    color: $primaryColor;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.language-product-content-mobile {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: $primaryColor;
+    margin-top: 22px;
+    z-index: 2;
+  
+  &.show-content-mobile {
+      display: flex;
+      right: 0;
+      color: $primaryColor;
+    }
+    
+#language-selection-mobile {
+    width: 100vw;
+
+    .box-texts-language-mobile {
+        display: flex;
+        width: 100%;
+        
+        .title-language-selection-mobile {
+            font-family: 'Open Sans', sans-serif;
+            color: $primaryColor;
+            font-size: 28px;
+            position: absolute;
+            margin-top: 28px;
+            margin-right: 28px;
+        }
+    }
+}       
+}
+.buttons-language-selection-mobile{
+    display: flex;  
+    flex-direction: column;
+    margin-top: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 40px;
+}
+.selection-button1-mobile, .selection-button2-mobile{
+    display: flex;
+    color: $primaryColor;
+}
+.selection-button1-mobile:hover, .selection-button2-mobile:hover{
+    background-color: $tertiarycolor;
+    border-radius: 10px;
+}
+.button-exit-mobile{
+    display: none;
+}
