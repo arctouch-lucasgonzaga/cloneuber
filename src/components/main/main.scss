@@ -1,6 +1,9 @@
 $primarycolor:#000;
 @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
 .espaco{
     height: 100vh;
 }
@@ -36,7 +39,6 @@ $primarycolor:#000;
     color: $primarycolor;
 }
 .subtitle-content-initial, .subtitle-second-content, .subtitle-third-content, .subtitle-fourth-content{
-    font-family: 'Nunito Sans', sans-serif;
     font-size: 16px;
     padding: 0px 55px 0px 95px;
     margin-top: 50px;
@@ -62,7 +64,6 @@ $primarycolor:#000;
     cursor: pointer;
     color: $primarycolor;
     align-content: center;
-    font-family: 'Nunito Sans', sans-serif;
     flex-wrap: wrap;
     font-size: 15px;
     margin-left: 35px;
@@ -132,7 +133,83 @@ $primarycolor:#000;
     background-color: #fff;
     border: solid 1px $primarycolor;
 }
-@media screen and (max-width : 768px){
+.buttons-download{
+    display: flex;
+    width: 100%;
+    height: 45vh;
+    overflow-x: hidden;
+}
+.container-buttons-download{
+    background-color: #EEEEEE;
+    width: 100%;
+}
+.title-content-buttons{
+    color: $primarycolor;
+    font-size: 35px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+.boxs-button-download{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+.content-buttons-download{
+    padding: 30px 230px 30px 230px;
+}
+.first-button-download, .second-button-download{
+    position: relative;
+    display: flex;
+    background-color: #fff;
+    width: 560px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.img-download-desktop{
+    width: 150px;
+    height: 150px;
+}
+.img-download-mobile{
+    width: 84px;
+    height: 84px;
+}
+.texts-buttons-download{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    width: 100%;
+
+}
+.title-button-download{
+    color: $primarycolor;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    width: 100%;
+}
+.subtitle-button-download{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    color: $primarycolor;
+    font-size: 12px;
+}
+.icon-arrow{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-right: 25px;
+    right: 0;
+    bottom: 30px;
+}
+.img-download-mobile{
+    display: none;
+}
+@media screen and (max-width : 1024px){
     .image-content-initial-desktop, .image-second-content-desktop, .image-third-content-desktop, .image-fourth-content-desktop{
         display: none;
     }
@@ -181,9 +258,40 @@ $primarycolor:#000;
         margin-left: unset;
         margin-top: 15px;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .content-box{
-        width: 94%;
+    .boxs-button-download{
+        flex-direction: column;
+        gap: unset;
+    }
+    .container-buttons-download{
+        background-color: transparent;
+        padding: 10px 10px;
+    }
+    .content-buttons-download{
+        padding: unset;
+    }
+    .img-download-desktop{
+        display: none;
+    }
+    .texts-buttons-download{
+        flex-direction: row;
+        width: 100%;
+    }
+    .subtitle-button-download{
+        display: none;
+    }
+    .first-button-download, .second-button-download{
+        border: 1px solid #0000001f;
+        padding: 12px;
+        width: unset;
+    }
+    .buttons-download{
+        height: 55vh;
+    }
+    .img-download-mobile{
+        display: flex;
+    }
+    .icon-arrow{
+        width: 30%;
+        bottom: unset;
     }
 }
