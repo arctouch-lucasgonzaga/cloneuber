@@ -399,7 +399,7 @@
 <section class="content-initial">
   <div class="content-box">
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png"
+      src="earner-illustra.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-content-initial-desktop"
     />
@@ -420,7 +420,7 @@
       </div>
     </div>
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png"
+      src="earner-illustra-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-content-initial-mobile"
     />
@@ -429,7 +429,7 @@
 <section class="second-content">
   <div class="second-content-box">
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1684887342/assets/4b/a6cba6-46dc-4084-960c-60dfef262936/original/rideshare-square.png"
+      src="rideshare-square-desktop.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-second-content-desktop"
     />
@@ -503,7 +503,7 @@
       </div>
     </div>
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1684887342/assets/4b/a6cba6-46dc-4084-960c-60dfef262936/original/rideshare-square.png"
+      src="rideshare-square-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-second-content-mobile"
     />
@@ -512,7 +512,7 @@
 <section class="third-content">
   <div class="third-content-box">
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png"
+      src="u4b-square.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-third-content-desktop"
     />
@@ -535,7 +535,7 @@
       </div>
     </div>
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png"
+      src="u4b-square-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-third-content-mobile"
     />
@@ -544,7 +544,7 @@
 <section class="fourth-content">
   <div class="fourth-content-box">
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
+      src="fleet-management.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-desktop"
     />
@@ -562,7 +562,7 @@
       </div>
     </div>
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
+      src="fleet-management-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-mobile"
     />
@@ -716,4 +716,3 @@
     <div id="${c.componentId}"></div>
     <div id="${a.componentId}"></div>
   `,s.loadComponent(),c.loadComponent(),a.loadComponent()}j();
-
