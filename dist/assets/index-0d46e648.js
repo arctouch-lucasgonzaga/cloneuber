@@ -399,7 +399,7 @@
 <section class="content-initial">
   <div class="content-box">
     <img
-      src="/earner-illustra.png"
+      src="earner-illustra.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-content-initial-desktop"
     />
@@ -420,7 +420,7 @@
       </div>
     </div>
     <img
-      src="/earner-illustra-mobile.webp"
+      src="earner-illustra-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-content-initial-mobile"
     />
@@ -429,7 +429,7 @@
 <section class="second-content">
   <div class="second-content-box">
     <img
-      src="/rideshare-square-desktop.webp"
+      src="rideshare-square-desktop.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-second-content-desktop"
     />
@@ -503,7 +503,7 @@
       </div>
     </div>
     <img
-      src="/rideshare-square-mobile.webp"
+      src="rideshare-square-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-second-content-mobile"
     />
@@ -512,7 +512,7 @@
 <section class="third-content">
   <div class="third-content-box">
     <img
-      src="/u4b-square.webp"
+      src="u4b-square.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-third-content-desktop"
     />
@@ -535,7 +535,7 @@
       </div>
     </div>
     <img
-      src="/u4b-square-mobile.webp"
+      src="u4b-square-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-third-content-mobile"
     />
@@ -544,7 +544,7 @@
 <section class="fourth-content">
   <div class="fourth-content-box">
     <img
-      src="/fleet-management.webp"
+      src="fleet-management.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-desktop"
     />
@@ -562,7 +562,7 @@
       </div>
     </div>
     <img
-      src="/fleet-management-mobile.webp"
+      src="fleet-management-mobile.webp"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-mobile"
     />
