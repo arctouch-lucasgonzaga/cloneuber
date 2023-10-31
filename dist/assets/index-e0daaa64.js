@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const t of n)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&i(l)}).observe(document,{childList:!0,subtree:!0});function y(n){const t={};return n.integrity&&(t.integrity=n.integrity),n.referrerPolicy&&(t.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?t.credentials="include":n.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(n){if(n.ep)return;n.ep=!0;const t=y(n);fetch(n.href,t)}})();const w=`<header class="header-menu">
+(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const t of n)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function w(n){const t={};return n.integrity&&(t.integrity=n.integrity),n.referrerPolicy&&(t.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?t.credentials="include":n.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function s(n){if(n.ep)return;n.ep=!0;const t=w(n);fetch(n.href,t)}})();const y=`<header class="header-menu">
   <nav class="menu">
     <ul class="menu-itens">
       <div class="itens-menu-left">
@@ -178,7 +178,7 @@
     <li class="content-dropdown">Carrers</li>
 </div>
 </div>
-`,r="dropdown-company";function k(){document.querySelector(`#${r}`).innerHTML=H,document.querySelector(".button-company").addEventListener("click",()=>{document.getElementById("company-content-dropdown").classList.toggle("show")})}const x={componentId:r,loadComponent:k};const L=`<div class="button-language">
+`,r="dropdown-company";function x(){document.querySelector(`#${r}`).innerHTML=H,document.querySelector(".button-company").addEventListener("click",()=>{document.getElementById("company-content-dropdown").classList.toggle("show")})}const k={componentId:r,loadComponent:x};const L=`<div class="button-language">
   <button class="menu-language" id="button-languageid">
     <svg
       width="16"
@@ -249,7 +249,7 @@
     <li class="item-drop-company">Carrers</li>
   </ul>
 </svg>
-`,p="button-company-mobile";function E(){document.querySelector(`#${p}`).innerHTML=$,document.querySelector("#content-company").addEventListener("click",()=>{document.querySelector(".lista-drop").classList.toggle("show"),document.querySelector("#button-company-mobile").classList.toggle("margin-force")})}const S={componentId:p,loadComponent:E};const T=`
+`,u="button-company-mobile";function _(){document.querySelector(`#${u}`).innerHTML=$,document.querySelector("#content-company").addEventListener("click",()=>{document.querySelector(".lista-drop").classList.toggle("show"),document.querySelector("#button-company-mobile").classList.toggle("margin-force")})}const E={componentId:u,loadComponent:_};const S=`
 <div class="force-color button-products" id="button-products">
   <svg
     width="14"
@@ -365,7 +365,7 @@
 </div>
 </div>
 </div>
-`,u="buttonProductsMobile";function q(){document.querySelector(`#${u}`).innerHTML=T,document.querySelector("#button-products").addEventListener("click",()=>{document.getElementById("content-menu-products").style.display="flex",document.getElementById("links-button").style.display="none",document.getElementById("buttonLanguageMobile").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("content-menu-products").classList.toggle("show-content_button-products")})}const P={componentId:u,loadComponent:q};const z=`<div class="menu-button-language-mobile" id="button-language-mobile">
+`,p="buttonProductsMobile";function q(){document.querySelector(`#${p}`).innerHTML=S,document.querySelector("#button-products").addEventListener("click",()=>{document.getElementById("content-menu-products").style.display="flex",document.getElementById("links-button").style.display="none",document.getElementById("buttonLanguageMobile").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("content-menu-products").classList.toggle("show-content_button-products")})}const T={componentId:p,loadComponent:q};const P=`<div class="menu-button-language-mobile" id="button-language-mobile">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
     <path
       d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z"
@@ -395,11 +395,11 @@
     </div>
   </div>
 </div>
-`,h="buttonLanguageMobile";function A(){document.querySelector(`#${h}`).innerHTML=z,document.querySelector("#button-language-mobile").addEventListener("click",()=>{document.getElementById("links-button").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("button-language-mobile").style.display="none",document.getElementById("fullscreen-language-mobile").classList.toggle("show-content-mobile")})}const U={componentId:h,loadComponent:A},m="button-menu-mobile";function O(){document.querySelector(`#${m}`).innerHTML=I,document.querySelector("#button-hamburguer").addEventListener("click",()=>{document.getElementById("conteudo-botao").classList.toggle("force-content"),document.getElementById("links-button").style.display="block",document.getElementById("buttonLanguageMobile").style.display="flex",document.getElementById("button-products").style.display="flex",document.getElementById("content-menu-products").style.display="none",document.getElementById("button-language-mobile").style.display="flex",document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile"),document.getElementById("lista-drop").classList.remove("show"),document.getElementById("button-company-mobile").classList.remove("margin-force")}),S.loadComponent(),P.loadComponent(),U.loadComponent()}const F={componentId:m,loadComponent:O},g="header";function D(){document.querySelector(`#${g}`).innerHTML=w,M.loadComponent(),x.loadComponent(),V.loadComponent(),F.loadComponent()}const s={componentId:g,loadComponent:D};const R=`<main class="espaco"></main>
+`,h="buttonLanguageMobile";function z(){document.querySelector(`#${h}`).innerHTML=P,document.querySelector("#button-language-mobile").addEventListener("click",()=>{document.getElementById("links-button").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("button-language-mobile").style.display="none",document.getElementById("fullscreen-language-mobile").classList.toggle("show-content-mobile")})}const A={componentId:h,loadComponent:z},m="button-menu-mobile";function U(){document.querySelector(`#${m}`).innerHTML=I,document.querySelector("#button-hamburguer").addEventListener("click",()=>{document.getElementById("conteudo-botao").classList.toggle("force-content"),document.getElementById("links-button").style.display="block",document.getElementById("buttonLanguageMobile").style.display="flex",document.getElementById("button-products").style.display="flex",document.getElementById("content-menu-products").style.display="none",document.getElementById("button-language-mobile").style.display="flex",document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile"),document.getElementById("lista-drop").classList.remove("show"),document.getElementById("button-company-mobile").classList.remove("margin-force")}),E.loadComponent(),T.loadComponent(),A.loadComponent()}const O={componentId:m,loadComponent:U},g="header";function F(){document.querySelector(`#${g}`).innerHTML=y,M.loadComponent(),k.loadComponent(),V.loadComponent(),O.loadComponent()}const i={componentId:g,loadComponent:F};const D=`<main class="espaco"></main>
 <section class="content-initial">
   <div class="content-box">
     <img
-      src="earner-illustra.png"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-content-initial-desktop"
     />
@@ -420,7 +420,7 @@
       </div>
     </div>
     <img
-      src="earner-illustra-mobile.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1684855112/assets/96/4dd3d1-94e7-481e-b28c-08d59353b9e0/original/earner-illustra.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-content-initial-mobile"
     />
@@ -429,7 +429,7 @@
 <section class="second-content">
   <div class="second-content-box">
     <img
-      src="rideshare-square-desktop.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1684887342/assets/4b/a6cba6-46dc-4084-960c-60dfef262936/original/rideshare-square.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-second-content-desktop"
     />
@@ -503,7 +503,7 @@
       </div>
     </div>
     <img
-      src="rideshare-square-mobile.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1684887342/assets/4b/a6cba6-46dc-4084-960c-60dfef262936/original/rideshare-square.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-second-content-mobile"
     />
@@ -512,7 +512,7 @@
 <section class="third-content">
   <div class="third-content-box">
     <img
-      src="u4b-square.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-third-content-desktop"
     />
@@ -535,7 +535,7 @@
       </div>
     </div>
     <img
-      src="u4b-square-mobile.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1684887108/assets/76/baf1ea-385a-408c-846b-59211086196c/original/u4b-square.png"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-third-content-mobile"
     />
@@ -544,7 +544,7 @@
 <section class="fourth-content">
   <div class="fourth-content-box">
     <img
-      src="fleet-management.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-desktop"
     />
@@ -562,13 +562,13 @@
       </div>
     </div>
     <img
-      src="fleet-management-mobile.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_798,h_798/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-mobile"
     />
   </div>
 </section>
-`,b="main";function G(){document.querySelector(`#${b}`).innerHTML=R;let o=document.getElementById("first-input"),e=document.getElementById("second-input");o.addEventListener("click",()=>{o.classList.add("style-click")}),o.addEventListener("focusout",()=>{o.classList.remove("style-click")}),e.addEventListener("click",()=>{e.classList.add("style-click")}),e.addEventListener("focusout",()=>{e.classList.remove("style-click")})}const c={componentId:b,loadComponent:G};const N=`<footer class="footer-space">
+`,b="main";function R(){document.querySelector(`#${b}`).innerHTML=D;let o=document.getElementById("first-input"),e=document.getElementById("second-input");o.addEventListener("click",()=>{o.classList.add("style-click")}),o.addEventListener("focusout",()=>{o.classList.remove("style-click")}),e.addEventListener("click",()=>{e.classList.add("style-click")}),e.addEventListener("focusout",()=>{e.classList.remove("style-click")})}const a={componentId:b,loadComponent:R};const G=`<footer class="footer-space">
   <div class="content-footer">
     <div class="toplist">
       <div class="left-itens">
@@ -711,8 +711,8 @@
         <span class="texts-end-footer">Terms</span>
     </div>
 </footer>
-`,f="footer";function _(){document.querySelector(`#${f}`).innerHTML=N}const a={componentId:f,loadComponent:_};async function j(){document.querySelector("#app").innerHTML=`
-    <div id="${s.componentId}"></div>
-    <div id="${c.componentId}"></div>
+`,f="footer";function N(){document.querySelector(`#${f}`).innerHTML=G}const c={componentId:f,loadComponent:N};async function j(){document.querySelector("#app").innerHTML=`
+    <div id="${i.componentId}"></div>
     <div id="${a.componentId}"></div>
-  `,s.loadComponent(),c.loadComponent(),a.loadComponent()}j();
+    <div id="${c.componentId}"></div>
+  `,i.loadComponent(),a.loadComponent(),c.loadComponent()}j();
