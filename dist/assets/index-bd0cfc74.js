@@ -544,7 +544,7 @@
 <section class="fourth-content">
   <div class="fourth-content-box">
     <img
-      src="fleet-management.webp"
+      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
       alt="nao foi possivel carregar a imagem corretamente"
       class="image-fourth-content-desktop"
     />
