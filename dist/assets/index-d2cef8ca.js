@@ -1,4 +1,4 @@
-(function(){const e=document.createElement("link").relList;if(e&&e.supports&&e.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))i(n);new MutationObserver(n=>{for(const t of n)if(t.type==="childList")for(const l of t.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&i(l)}).observe(document,{childList:!0,subtree:!0});function y(n){const t={};return n.integrity&&(t.integrity=n.integrity),n.referrerPolicy&&(t.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?t.credentials="include":n.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function i(n){if(n.ep)return;n.ep=!0;const t=y(n);fetch(n.href,t)}})();const w=`<header class="header-menu">
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const e of n)if(e.type==="childList")for(const l of e.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function w(n){const e={};return n.integrity&&(e.integrity=n.integrity),n.referrerPolicy&&(e.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?e.credentials="include":n.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function s(n){if(n.ep)return;n.ep=!0;const e=w(n);fetch(n.href,e)}})();const y=`<header class="header-menu">
   <nav class="menu">
     <ul class="menu-itens">
       <div class="itens-menu-left">
@@ -160,7 +160,7 @@
     </li>
   </div>
 </div>
-`,d="dropdown-product";function Z(){document.querySelector(`#${d}`).innerHTML=C,document.querySelector(".menu-products").addEventListener("click",()=>{document.getElementById("productsDropContent").classList.toggle("show")})}const M={componentId:d,loadComponent:Z};const H=`<div class="menu-company">
+`,d="dropdown-product";function Z(){document.querySelector(`#${d}`).innerHTML=C,document.querySelector(".menu-products").addEventListener("click",()=>{document.getElementById("productsDropContent").classList.toggle("show")})}const M={componentId:d,loadComponent:Z};const x=`<div class="menu-company">
 <button class="button-company">
   Company
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="svg-company">
@@ -178,7 +178,7 @@
     <li class="content-dropdown">Carrers</li>
 </div>
 </div>
-`,r="dropdown-company";function k(){document.querySelector(`#${r}`).innerHTML=H,document.querySelector(".button-company").addEventListener("click",()=>{document.getElementById("company-content-dropdown").classList.toggle("show")})}const x={componentId:r,loadComponent:k};const L=`<div class="button-language">
+`,r="dropdown-company";function H(){document.querySelector(`#${r}`).innerHTML=x,document.querySelector(".button-company").addEventListener("click",()=>{document.getElementById("company-content-dropdown").classList.toggle("show")})}const k={componentId:r,loadComponent:H};const L=`<div class="button-language">
   <button class="menu-language" id="button-languageid">
     <svg
       width="16"
@@ -249,7 +249,7 @@
     <li class="item-drop-company">Carrers</li>
   </ul>
 </svg>
-`,p="button-company-mobile";function E(){document.querySelector(`#${p}`).innerHTML=$,document.querySelector("#content-company").addEventListener("click",()=>{document.querySelector(".lista-drop").classList.toggle("show"),document.querySelector("#button-company-mobile").classList.toggle("margin-force")})}const S={componentId:p,loadComponent:E};const T=`
+`,p="button-company-mobile";function E(){document.querySelector(`#${p}`).innerHTML=$,document.querySelector("#content-company").addEventListener("click",()=>{document.querySelector(".lista-drop").classList.toggle("show"),document.querySelector("#button-company-mobile").classList.toggle("margin-force")})}const S={componentId:p,loadComponent:E};const q=`
 <div class="force-color button-products" id="button-products">
   <svg
     width="14"
@@ -365,7 +365,7 @@
 </div>
 </div>
 </div>
-`,u="buttonProductsMobile";function q(){document.querySelector(`#${u}`).innerHTML=T,document.querySelector("#button-products").addEventListener("click",()=>{document.getElementById("content-menu-products").style.display="flex",document.getElementById("links-button").style.display="none",document.getElementById("buttonLanguageMobile").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("content-menu-products").classList.toggle("show-content_button-products")})}const P={componentId:u,loadComponent:q};const z=`<div class="menu-button-language-mobile" id="button-language-mobile">
+`,u="buttonProductsMobile";function T(){document.querySelector(`#${u}`).innerHTML=q,document.querySelector("#button-products").addEventListener("click",()=>{document.getElementById("content-menu-products").style.display="flex",document.getElementById("links-button").style.display="none",document.getElementById("buttonLanguageMobile").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("content-menu-products").classList.toggle("show-content_button-products")})}const A={componentId:u,loadComponent:T};const P=`<div class="menu-button-language-mobile" id="button-language-mobile">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
     <path
       d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z"
@@ -395,33 +395,35 @@
     </div>
   </div>
 </div>
-`,h="buttonLanguageMobile";function A(){document.querySelector(`#${h}`).innerHTML=z,document.querySelector("#button-language-mobile").addEventListener("click",()=>{document.getElementById("links-button").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("button-language-mobile").style.display="none",document.getElementById("fullscreen-language-mobile").classList.toggle("show-content-mobile")})}const U={componentId:h,loadComponent:A},m="button-menu-mobile";function O(){document.querySelector(`#${m}`).innerHTML=I,document.querySelector("#button-hamburguer").addEventListener("click",()=>{document.getElementById("conteudo-botao").classList.toggle("force-content"),document.getElementById("links-button").style.display="block",document.getElementById("buttonLanguageMobile").style.display="flex",document.getElementById("button-products").style.display="flex",document.getElementById("content-menu-products").style.display="none",document.getElementById("button-language-mobile").style.display="flex",document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile"),document.getElementById("lista-drop").classList.remove("show"),document.getElementById("button-company-mobile").classList.remove("margin-force")}),S.loadComponent(),P.loadComponent(),U.loadComponent()}const F={componentId:m,loadComponent:O},g="header";function D(){document.querySelector(`#${g}`).innerHTML=w,M.loadComponent(),x.loadComponent(),V.loadComponent(),F.loadComponent()}const s={componentId:g,loadComponent:D};const R=`<main class="espaco"></main>
+`,h="buttonLanguageMobile";function z(){document.querySelector(`#${h}`).innerHTML=P,document.querySelector("#button-language-mobile").addEventListener("click",()=>{document.getElementById("links-button").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("button-language-mobile").style.display="none",document.getElementById("fullscreen-language-mobile").classList.toggle("show-content-mobile")})}const U={componentId:h,loadComponent:z},m="button-menu-mobile";function D(){document.querySelector(`#${m}`).innerHTML=I,document.querySelector("#button-hamburguer").addEventListener("click",()=>{document.getElementById("conteudo-botao").classList.toggle("force-content"),document.getElementById("links-button").style.display="block",document.getElementById("buttonLanguageMobile").style.display="flex",document.getElementById("button-products").style.display="flex",document.getElementById("content-menu-products").style.display="none",document.getElementById("button-language-mobile").style.display="flex",document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile"),document.getElementById("lista-drop").classList.remove("show"),document.getElementById("button-company-mobile").classList.remove("margin-force"),document.getElementById("html").classList.toggle("overflow-force")}),S.loadComponent(),A.loadComponent(),U.loadComponent()}const _={componentId:m,loadComponent:D},g="header";function F(){document.querySelector(`#${g}`).innerHTML=y,M.loadComponent(),k.loadComponent(),V.loadComponent(),_.loadComponent()}const i={componentId:g,loadComponent:F};const O=`=
+<main class="espaco"></main>
 <section class="content-initial">
   <div class="content-box">
     <img
-      src="earner-illustra.png"
-      alt="nao foi possivel carregar a imagem corretamente"
+      src="/earner-illustra.png"
+      alt="Desenho de motorista de carro olhando um gps"
       class="image-content-initial-desktop"
     />
     <div class="texts-content-initial">
       <h1 class="title-content-initial">
-        Drive when you want, make what you need
+        Dirija quando quiser e ganhe de acordo com suas necessidades
       </h1>
       <h2 class="subtitle-content-initial">
-        Make money on your schedule with deliveries or rides—or both. You can
-        use your own car or choose a rental through Uber.
+        Ganhe dinheiro no seu horário com entregas ou viagens, ou ambos. Você
+        pode usar seu próprio carro ou escolher um carro alugado através da
+        Uber.
       </h2>
       <div class="button-content-initial">
-        <button class="btn-content-initial">Get Started</button>
+        <button class="btn-content-initial">Começar</button>
         <li class="button-singin">
-          Already have an account? Sign in
+          Já tem uma conta? Fazer login
           <span class="horizontal-line"></span>
         </li>
       </div>
     </div>
     <img
-      src="earner-illustra-mobile.webp"
-      alt="nao foi possivel carregar a imagem corretamente"
+      src="/earner-illustra-mobile.webp"
+      alt="Desenho de motorista de carro olhando um gps"
       class="image-content-initial-mobile"
     />
   </div>
@@ -429,16 +431,23 @@
 <section class="second-content">
   <div class="second-content-box">
     <img
-      src="rideshare-square-desktop.webp"
-      alt="nao foi possivel carregar a imagem corretamente"
+      src="/rideshare-square-desktop.webp"
+      alt="Desenho de uma mulher saindo de um carro em uma cidade"
       class="image-second-content-desktop"
     />
     <div class="texts-second-content">
-      <h1 class="title-second-content">Always the ride you want</h1>
-      <h2 class="subtitle-second-content">Request a ride, hop in, and go.</h2>
+      <h1 class="title-second-content">A viagem que você deseja</h1>
+      <h2 class="subtitle-second-content">
+        Solicite uma viagem, entre no carro e relaxe.
+      </h2>
       <div class="inputs-second-content">
         <div class="first-input">
-          <input type="text" class="inputs-boxs" placeholder="Enter location" id="first-input"/>
+          <input
+            type="text"
+            class="inputs-boxs"
+            placeholder="Informe o local"
+            id="first-input"
+          />
           <button class="svg-input">
             <svg
               width="20"
@@ -464,7 +473,6 @@
               fill="none"
               tabindex="0"
               role="button"
-              class="pe-location-fetch css-bOZeEP"
             >
               <title>Navigate right up</title>
               <path
@@ -479,7 +487,7 @@
           <input
             type="text"
             class="inputs-boxs"
-            placeholder="Enter destination"
+            placeholder="Informar o destino"
             id="second-input"
           />
           <div class="svg-input">
@@ -500,80 +508,158 @@
             </svg>
           </div>
         </div>
+        <button class="btn-second-content btn-content-initial">
+          Começar
+        </button>
       </div>
     </div>
     <img
-      src="rideshare-square-mobile.webp"
-      alt="nao foi possivel carregar a imagem corretamente"
-      class="image-second-content-mobile"
+      src="/rideshare-square-mobile.webp"
+      alt="Desenho de uma mulher saindo de um carro em uma cidade"
     />
   </div>
 </section>
 <section class="third-content">
   <div class="third-content-box">
     <img
-      src="u4b-square.webp"
-      alt="nao foi possivel carregar a imagem corretamente"
+      src="/u4b-square.webp"
+      alt="Desenho de uma mulher saindo do carro chegando a um aeroporto"
       class="image-third-content-desktop"
     />
     <div class="texts-third-content">
       <h1 class="title-third-content">
-        The Uber you know, reimagined for business
+        A plataforma Uber que você conhece, reinventada para empresas
       </h1>
       <h2 class="subtitle-third-content">
-        Uber for Business is a platform for managing global rides and meals, and
-        local deliveries, for companies of any size.
+        A Uber para Empresas é uma plataforma global de gestão de viagens,
+        refeições e entregas locais para empresas de todos os portes.
       </h2>
       <div class="button-third-content">
-        <button class="btn-third-content btn-content-initial">
-          Get Started
-        </button>
+        <button class="btn-third-content btn-content-initial">Começar</button>
         <li class="button-ckeckout">
-          Check out our solutions
+          Confira nossas soluções
           <span class="horizontal-line"></span>
         </li>
+        ƒ
       </div>
     </div>
     <img
-      src="u4b-square-mobile.webp"
-      alt="nao foi possivel carregar a imagem corretamente"
-      class="image-third-content-mobile"
+      src="/u4b-square-mobile.webp"
+      alt="Desenho de uma mulher saindo do carro chegando a um aeroporto"
     />
   </div>
 </section>
 <section class="fourth-content">
   <div class="fourth-content-box">
     <img
-      src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_1116,h_1116/v1696243819/assets/18/34e6fd-33e3-4c95-ad7a-f484a8c812d7/original/fleet-management.jpg"
-      alt="nao foi possivel carregar a imagem corretamente"
+      src="/fleet-management.webp"
+      alt="Desenho de um homem encostado em um carro com confetes de festa"
       class="image-fourth-content-desktop"
     />
     <div class="texts-fourth-content">
-      <h1 class="title-fourth-content">
-        Make money by renting out your car
-      </h1>
+      <h1 class="title-fourth-content">Ganhe dinheiro alugando seu carro</h1>
       <h2 class="subtitle-fourth-content">
-        Connect with thousands of drivers and earn more per week with Uber’s free fleet management tools.
+        Conecte-se com milhares de motoristas parceiros e ganhe mais por semana com as ferramentas gratuitas de gerenciamento da Uber para locadores de veículos.
       </h2>
       <div class="button-fourth-content">
         <button class="btn-fourth-content btn-content-initial">
-          Get Started
+          Começar
         </button>
       </div>
     </div>
-    <img
-      src="fleet-management-mobile.webp"
-      alt="nao foi possivel carregar a imagem corretamente"
+    <im
+      src="/fleet-management-mobile.webp"
+      alt="Desenho de um homem encostado em um carro com confetes de festa"
       class="image-fourth-content-mobile"
     />
   </div>
 </section>
-`,b="main";function G(){document.querySelector(`#${b}`).innerHTML=R;let o=document.getElementById("first-input"),e=document.getElementById("second-input");o.addEventListener("click",()=>{o.classList.add("style-click")}),o.addEventListener("focusout",()=>{o.classList.remove("style-click")}),e.addEventListener("click",()=>{e.classList.add("style-click")}),e.addEventListener("focusout",()=>{e.classList.remove("style-click")})}const c={componentId:b,loadComponent:G};const N=`<footer class="footer-space">
+<section class="buttons-download">
+  <div class="container-buttons-download">
+    <div class="content-buttons-download">
+      <h1 class="title-content-buttons">É mais fácil pelo app</h1>
+      <div class="boxs-button-download">
+        <div class="first-button-download">
+          <div class="images-download">
+            <img
+              src="/Final-Download-Uber-App.webp"
+              alt="Imagem do Qr code para baixar o app de cliente uber"
+              class="img-download-desktop"
+            />
+            <img
+              src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_168,h_168/v1690810558/assets/e2/4f1914-1e23-4896-ad77-22e88c37c2f9/original/Rider-App-Icon_iOS.svg"
+              alt="Imagem do Qr code para baixar o app de cliente uber"
+              role="presentation"
+              class="img-download-mobile"
+            />
+          </div>
+          <div class="texts-buttons-download">
+            <h1 class="title-button-download">Baixe o app da Uber</h1>
+            <h2 class="subtitle-button-download">Leia o código QR para baixar o app</h2>
+            <div class="icon-arrow">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="25"
+                fill="black"
+                viewBox="0 0 36 36"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.2354 2H24.2711L36 18L24.2711 34H18.2354L28.1237 20.56H0V15.44H28.1237L18.2354 2Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="second-button-download">
+          <div class="images-download">
+            <img
+              src="/Final-Download-Uber-App.webp"
+              alt="Imagem do Qr code para baixar o app de motorista uber"
+              class="img-download-desktop"
+            />
+            <img
+              src="https://www.uber-assets.com/image/upload/q_auto:eco,c_fill,w_168,h_168/v1690810802/assets/48/0eb066-2389-442c-b0f7-1cdcaa68a649/original/Driver-App-Icon_iOS.svg"
+              alt="Imagem do Qr code para baixar o app de cliente uber"
+              class="img-download-mobile"
+            />
+          </div>
+          <div class="texts-buttons-download">
+            <h1 class="title-button-download">Baixe o app da Uber</h1>
+            <h2 class="subtitle-button-download">Leia o código QR para baixar o app</h2>
+            <div class="icon-arrow">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                width="1em"
+                height="25"
+                fill="black"
+                viewBox="0 0 36 36"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M18.2354 2H24.2711L36 18L24.2711 34H18.2354L28.1237 20.56H0V15.44H28.1237L18.2354 2Z"
+                  fill="black"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`,b="main";function j(){document.querySelector(`#${b}`).innerHTML=O;let o=document.getElementById("first-input"),t=document.getElementById("second-input");o.addEventListener("click",()=>{o.classList.add("style-click")}),o.addEventListener("focusout",()=>{o.classList.remove("style-click")}),t.addEventListener("click",()=>{t.classList.add("style-click")}),t.addEventListener("focusout",()=>{t.classList.remove("style-click")})}const a={componentId:b,loadComponent:j};const R=`<footer class="footer-space">
   <div class="content-footer">
     <div class="toplist">
       <div class="left-itens">
         <span class="icon-footer"> Uber </span>
-        <span class="text-help"> Visit Help Center </span>
+        <span class="text-help"> Acesse a central de ajuda </span>
       </div>
       <div class="right-itens">
         <span class="adress-uber">
@@ -585,42 +671,42 @@
     </div>
     <div class="footer-link-list-content">
       <div class="list-company">
-        <span class="title-company">Company</span>
+        <span class="title-company">Empresa</span>
         <ul class="itens-list-company">
-          <li class="links-company">About Us</li>
-          <li class="links-company">Our Offerings</li>
+          <li class="links-company">Quem somos</li>
+          <li class="links-company">O que oferecemos</li>
           <li class="links-company">Newsroom</li>
-          <li class="links-company">Investors</li>
+          <li class="links-company">Investidoress</li>
           <li class="links-company">Blog</li>
-          <li class="links-company">Carrers</li>
+          <li class="links-company">Carreiras</li>
           <li class="links-company">Ai</li>
           <li class="links-company">Gift Cards</li>
         </ul>
       </div>
       <div class="list-products">
-        <span class="title-products">Products</span>
+        <span class="title-products">Produtos</span>
         <ul class="itens-list-products">
-          <li class="links-products">Ride</li>
-          <li class="links-products">Drive</li>
-          <li class="links-products">Deliver</li>
-          <li class="links-products">Uber for Business</li>
+          <li class="links-products">Viajar</li>
+          <li class="links-products">Dirigir</li>
+          <li class="links-products">Fazer entregas</li>
+          <li class="links-products">Uber para empresas</li>
           <li class="links-products">Uber Freight</li>
         </ul>
       </div>
       <div class="list-global-citizenship">
-        <span class="title-global-citizenship">Global Citizenship</span>
+        <span class="title-global-citizenship">Cidadania Global</span>
         <ul class="itens-list-global">
-          <li class="links-global">Safety</li>
-          <li class="links-global">Diversity and Inclusion</li>
-          <li class="links-global">Sustainability</li>
+          <li class="links-global">Segurança</li>
+          <li class="links-global">Diversidade e inclusão</li>
+          <li class="links-global">Sustentabilidade</li>
         </ul>
       </div>
       <div class="list-travel">
-        <span class="title-travel">Travel</span>
+        <span class="title-travel">Viaje</span>
         <ul class="itens-list-travel">
-          <li class="links-travel">Reserve</li>
-          <li class="links-travel">Airports</li>
-          <li class="links-travel">Cities</li>
+          <li class="links-travel">Reservar</li>
+          <li class="links-travel">Aeroportos</li>
+          <li class="links-travel">Cidades</li>
         </ul>
       </div>
     </div>
@@ -692,7 +778,7 @@
           fill="currentColor"
           ></path>
         </svg>
-        <span class="text-button-language">English</span>
+        <span class="text-button-language">Português (Brasil)</span>
       </div>
       <div class="location-footer">
           <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none"><title>Location marker</title><path d="M18.7 3.8C15 .1 9 .1 5.3 3.8c-3.7 3.7-3.7 9.8 0 13.5L12 24l6.7-6.8c3.7-3.6 3.7-9.7 0-13.4ZM12 12.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Z" fill="currentColor"></path></svg>
@@ -711,8 +797,8 @@
         <span class="texts-end-footer">Terms</span>
     </div>
 </footer>
-`,f="footer";function _(){document.querySelector(`#${f}`).innerHTML=N}const a={componentId:f,loadComponent:_};async function j(){document.querySelector("#app").innerHTML=`
-    <div id="${s.componentId}"></div>
-    <div id="${c.componentId}"></div>
+`,f="footer";function N(){document.querySelector(`#${f}`).innerHTML=R}const c={componentId:f,loadComponent:N};async function G(){document.querySelector("#app").innerHTML=`
+    <div id="${i.componentId}"></div>
     <div id="${a.componentId}"></div>
-  `,s.loadComponent(),c.loadComponent(),a.loadComponent()}j();
+    <div id="${c.componentId}"></div>
+  `,i.loadComponent(),a.loadComponent(),c.loadComponent()}G();
