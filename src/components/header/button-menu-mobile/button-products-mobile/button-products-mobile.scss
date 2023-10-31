@@ -1,0 +1,39 @@
+
+.button-products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 0;
+    margin-top: 65px;
+    background-color: #EEEEEE;
+    width: 85%;
+    margin-left: 3px;
+    border-radius: 8px;
+}
+.content-menu-products{
+    display: none;
+    flex-direction: column;
+    gap: 60px;
+    margin-top: 20px;
+}
+.show-content_button-products{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    font-size: 35px;     
+}
+.dropdown-button{
+    font-size: 16px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.text-style-dropdown{
+    font-size: 25px;
+}

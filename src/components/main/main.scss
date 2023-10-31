@@ -1,1 +1,189 @@
+$primarycolor:#000;
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+.espaco{
+    height: 100vh;
+}
+.content-initial, .second-content, .third-content, .fourth-content{
+    display: flex;
+    width: 100%;
+    margin-bottom: 90px;
+    overflow-x: hidden;
+}
+.content-box, .third-content-box{
+    display: flex;
+    width: 100%;
+    padding: 0 260px 0 260px;
+}
+.second-content-box, .fourth-content-box{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 0 260px 0 260px;
+}
+.texts-content-initial, .texts-second-content, .texts-third-content, .texts-fourth-content{
+    display: flex;
+    flex-direction: column;
+}
+.image-content-initial-desktop, .image-second-content-desktop, .image-third-content-desktop, .image-fourth-content-desktop{
+    width: 558px;
+    height: 558px;
+}
+.title-content-initial, .title-second-content, .title-third-content, .title-fourth-content{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    padding: 95px 95px 0px 95px;
+    color: $primarycolor;
+}
+.subtitle-content-initial, .subtitle-second-content, .subtitle-third-content, .subtitle-fourth-content{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    padding: 0px 55px 0px 95px;
+    margin-top: 50px;
+    color: $primarycolor;
+}
+.button-content-initial, .button-third-content, .button-fourth-content{
+    display: flex;
+    width: 100%;
+    margin-left: 95px;
+    margin-top: 50px;
+}
+.btn-content-initial, .btn-third-content, .btn-fourth-content{
+    color: #fff;
+    background-color: $primarycolor;
+    padding: 20px;
+    border-radius: 8px;
+    width: 135px;
+    height: 50px;
+    font-size: 12px;
+}
+.button-singin, .button-ckeckout{
+    display: flex;
+    cursor: pointer;
+    color: $primarycolor;
+    align-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    flex-wrap: wrap;
+    font-size: 15px;
+    margin-left: 35px;
+}
+.horizontal-line {
+    width: 100%;
+    height: 2px; 
+    background-color: #a9a9a9;
+    transition: background-color 0.3s;
+}
 
+.horizontal-line:hover {
+    background-color: $primarycolor;
+}
+.image-content-initial-mobile, .image-second-content-mobile, .image-third-content-mobile, .image-fourth-content-mobile{
+    display: none;
+}
+.inputs-second-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 0 0 0 95px;
+}
+.inputs-boxs{
+    height: 43px;
+    width: 278px;
+    color: $primarycolor;
+    background-color: #EEEEEE;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 0 35px;
+}
+.inputs-boxs::placeholder{
+    font-size: 15px;
+    color: #6b6b6b;
+}
+.first-input, .second-input{
+    position: relative;
+    width: 348px;
+}
+.svg-input-location{
+    position: absolute;
+    top: 10px; right: 15px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.svg-input{
+    position: absolute;
+    top: 10px; right: 320px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+.vertical-line{
+    position: absolute;
+    width: 1px; /* Line width */
+    background-color: $primarycolor; /* Line color */
+    height: 40px; /* Override in-line if you want specific height. */
+    float: left; 
+    z-index: 2;
+    margin-top: 28px;
+    margin-left: 17px;
+}
+.style-click{
+    background-color: #fff;
+    border: solid 1px $primarycolor;
+}
+@media screen and (max-width : 768px){
+    .image-content-initial-desktop, .image-second-content-desktop, .image-third-content-desktop, .image-fourth-content-desktop{
+        display: none;
+    }
+    .image-content-initial-mobile, .image-second-content-mobile, .image-third-content-mobile, .image-fourth-content-mobile{
+        display: block;
+    }
+    .content-box, .second-content-box, .third-content-box, .fourth-content-box{
+        flex-direction: column;
+        padding: unset;
+        padding: 0 24px 0 24px;
+        width: 88%;
+    }
+    .texts-content-initial, .texts-second-content, .texts-third-content, .texts-fourth-content{
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+    .title-content-initial, .title-second-content, .title-third-content, .title-fourth-content{
+        padding: unset;
+        font-size: 36px;
+    }
+    .subtitle-content-initial, .subtitle-second-content, .subtitle-third-content, .subtitle-fourth-content{
+        padding: unset;
+        margin-top: 20px;
+    }
+    .button-content-initial, .button-third-content, .button-fourth-content{
+        margin: unset;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    .button-singin{
+        flex-wrap: unset;
+        margin-left: unset;
+        margin-top: 15px;
+    }
+    .horizontal-line{
+        display: none;
+    }
+    .image-content-initial,.image-second-content-desktop, .image-third-content-desktop, .image-fourth-content-desktop{
+        width: unset;
+        height: unset;
+    }
+    .inputs-second-content{
+        padding: unset;
+    }
+    .button-ckeckout{
+        margin-left: unset;
+        margin-top: 15px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .content-box{
+        width: 94%;
+    }
+}

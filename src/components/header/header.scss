@@ -59,11 +59,16 @@
   display: none;
 }
 .itens-menu-right{
+  position: relative;
+  z-index: 1;
   display: flex;
-  width: 40%;
+  width: 100%;
   align-items: center;
   margin-left: 40%;
   gap: 17px;
+}
+.button-language{
+  width: 100%;
 }
 .svg-style{
   position: relative;
@@ -123,7 +128,6 @@
   }
   .icon-menu{
     position: relative;
-    right: 30px;
     margin-top: 6px;
   }
   .menu-mobile-itens-right {
@@ -132,7 +136,7 @@
     align-items: center;
     justify-content: flex-end;
     width: 100%;
-    margin-right: 30px;
+    margin-right: 25px;
     gap: 20px;
     font-size: 14px;
   }
@@ -156,13 +160,10 @@
   }
 }
 @media screen and (max-width: 414px) {
-  .header-menu{
-    background-color: green;
-  }
   .menu{
     margin-left: unset;
   }
   .icon-menu{
-    margin-left: 10%;
+    margin-left: 5%;
   }
 }
