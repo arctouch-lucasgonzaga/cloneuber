@@ -16,6 +16,7 @@ export function loadComponent(){
     document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile");
     document.getElementById("lista-drop").classList.remove("show");
     document.getElementById("button-company-mobile").classList.remove("margin-force");   
+    document.getElementById("html").classList.toggle("overflow-force")
     })
     buttonCompanyMobile.loadComponent();
     buttonProductsMobile.loadComponent();
