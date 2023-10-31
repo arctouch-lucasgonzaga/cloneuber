@@ -12,7 +12,7 @@
     "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
-    "sass": "^1.66.0",
+    "sass": "^1.69.5",
     "vite": "^4.4.5"
   }
 }
