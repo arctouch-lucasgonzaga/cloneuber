@@ -2,6 +2,7 @@ $primaryColor : #000;
 .content-button{
     display: none;
     position: absolute;
+    overflow-y: hidden;
     margin-top: 15px;
     width: 100%;
     height: 100%;
