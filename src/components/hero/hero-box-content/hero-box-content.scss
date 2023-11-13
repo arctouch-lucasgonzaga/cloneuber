@@ -4,6 +4,7 @@ $secondaryColor: #fff;
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
 #hero-box-content{
     color: #000;
+    margin-bottom: 100px;
 }
 .space-content{
     height: 100vh; width: 100vw;
@@ -11,7 +12,7 @@ $secondaryColor: #fff;
 .container{
     position: absolute;
     height: 100%; width: 100%;
-    background-color: $primaryColor;
+    background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_2294,h_1526/v1653688465/assets/29/74ec2f-a727-47e1-9695-c78f8dadee5f/original/DotCom_Update_Earner_bg2x.jpg);
 }
 .container-box{
     width: 650px; height: 600px;
@@ -156,6 +157,12 @@ $secondaryColor: #fff;
 }
 .icons-toplist-wrapper{
     display: flex;
+}
+.background-content-box-2{
+    background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_2294,h_1718/v1653688612/assets/4e/98a67b-fa75-455d-b932-2d3ba478a4ed/original/DotCom_Update_Rider_bg2x.jpg) !important;
+}
+.background-content-box-3{
+    background-image: url(https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_2294,h_1438/v1676402377/assets/96/b65283-3d6d-4577-a71b-2d755ffc8605/original/UberIM_002309-%281%29.jpg);
 }
 @media screen and (max-width:1024px) {   
     .container-box{
