@@ -1,4 +1,4 @@
-(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))s(n);new MutationObserver(n=>{for(const e of n)if(e.type==="childList")for(const l of e.addedNodes)l.tagName==="LINK"&&l.rel==="modulepreload"&&s(l)}).observe(document,{childList:!0,subtree:!0});function w(n){const e={};return n.integrity&&(e.integrity=n.integrity),n.referrerPolicy&&(e.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?e.credentials="include":n.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function s(n){if(n.ep)return;n.ep=!0;const e=w(n);fetch(n.href,e)}})();const y=`<header class="header-menu">
+(function(){const t=document.createElement("link").relList;if(t&&t.supports&&t.supports("modulepreload"))return;for(const n of document.querySelectorAll('link[rel="modulepreload"]'))l(n);new MutationObserver(n=>{for(const e of n)if(e.type==="childList")for(const s of e.addedNodes)s.tagName==="LINK"&&s.rel==="modulepreload"&&l(s)}).observe(document,{childList:!0,subtree:!0});function x(n){const e={};return n.integrity&&(e.integrity=n.integrity),n.referrerPolicy&&(e.referrerPolicy=n.referrerPolicy),n.crossOrigin==="use-credentials"?e.credentials="include":n.crossOrigin==="anonymous"?e.credentials="omit":e.credentials="same-origin",e}function l(n){if(n.ep)return;n.ep=!0;const e=x(n);fetch(n.href,e)}})();const M=`<header class="header-menu">
   <nav class="menu">
     <ul class="menu-itens">
       <div class="itens-menu-left">
@@ -35,7 +35,7 @@
     </ul>
   </nav>
 </header>
-`;const C=`<script
+`;const Z=`<script
   src="https://kit.fontawesome.com/6c87fca60e.js"
   crossorigin="anonymous"
 ><\/script>
@@ -160,7 +160,7 @@
     </li>
   </div>
 </div>
-`,d="dropdown-product";function Z(){document.querySelector(`#${d}`).innerHTML=C,document.querySelector(".menu-products").addEventListener("click",()=>{document.getElementById("productsDropContent").classList.toggle("show")})}const M={componentId:d,loadComponent:Z};const x=`<div class="menu-company">
+`,r="dropdown-product";function H(){document.querySelector(`#${r}`).innerHTML=Z,document.querySelector(".menu-products").addEventListener("click",()=>{document.getElementById("productsDropContent").classList.toggle("show")})}const L={componentId:r,loadComponent:H};const k=`<div class="menu-company">
 <button class="button-company">
   Company
   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" class="svg-company">
@@ -178,7 +178,7 @@
     <li class="content-dropdown">Carrers</li>
 </div>
 </div>
-`,r="dropdown-company";function H(){document.querySelector(`#${r}`).innerHTML=x,document.querySelector(".button-company").addEventListener("click",()=>{document.getElementById("company-content-dropdown").classList.toggle("show")})}const k={componentId:r,loadComponent:H};const L=`<div class="button-language">
+`,u="dropdown-company";function B(){document.querySelector(`#${u}`).innerHTML=k,document.querySelector(".button-company").addEventListener("click",()=>{document.getElementById("company-content-dropdown").classList.toggle("show")})}const V={componentId:u,loadComponent:B};const S=`<div class="button-language">
   <button class="menu-language" id="button-languageid">
     <svg
       width="16"
@@ -216,7 +216,7 @@
     </div>
   </button>
 </div>
-`,v="button-language";function B(){document.querySelector(`#${v}`).innerHTML=L,document.querySelector("#button-languageid").addEventListener("click",()=>{document.getElementById("fullscreen-language").classList.toggle("show-content"),document.querySelector(".buttons-language-selection").classList.toggle("button-selection-display")})}const V={componentId:v,loadComponent:B};const I=`<div id="button-hamburguer">
+`,v="button-language";function I(){document.querySelector(`#${v}`).innerHTML=S,document.querySelector("#button-languageid").addEventListener("click",()=>{document.getElementById("fullscreen-language").classList.toggle("show-content"),document.querySelector(".buttons-language-selection").classList.toggle("button-selection-display")})}const q={componentId:v,loadComponent:I};const $=`<div id="button-hamburguer">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" color="white">
     <path d="M2 6h20v3H2V6Z" fill="white"></path>
     ,
@@ -235,7 +235,7 @@
   <div id="buttonLanguageMobile"></div>
   </div>
 </div>
-`;const $=`<div class="force-color content-company" id="content-company">Company</div>
+`;const E=`<div class="force-color content-company" id="content-company">Company</div>
 <svg class="arrow-style" width="24" height="24" viewBox="0 0 24 24" fill="none">
   <path d="M18 8v3.8l-6 4.6-6-4.6V8l6 4.6L18 8Z" fill="black"></path>
   <ul class="lista-drop" id="lista-drop">
@@ -249,7 +249,7 @@
     <li class="item-drop-company">Carrers</li>
   </ul>
 </svg>
-`,p="button-company-mobile";function S(){document.querySelector(`#${p}`).innerHTML=$,document.querySelector("#content-company").addEventListener("click",()=>{document.querySelector(".lista-drop").classList.toggle("show"),document.querySelector("#button-company-mobile").classList.toggle("margin-force")})}const E={componentId:p,loadComponent:S};const q=`
+`,p="button-company-mobile";function T(){document.querySelector(`#${p}`).innerHTML=E,document.querySelector("#content-company").addEventListener("click",()=>{document.querySelector(".lista-drop").classList.toggle("show"),document.querySelector("#button-company-mobile").classList.toggle("margin-force")})}const z={componentId:p,loadComponent:T};const A=`
 <div class="force-color button-products" id="button-products">
   <svg
     width="14"
@@ -365,7 +365,7 @@
 </div>
 </div>
 </div>
-`,u="buttonProductsMobile";function T(){document.querySelector(`#${u}`).innerHTML=q,document.querySelector("#button-products").addEventListener("click",()=>{document.getElementById("content-menu-products").style.display="flex",document.getElementById("links-button").style.display="none",document.getElementById("buttonLanguageMobile").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("content-menu-products").classList.toggle("show-content_button-products")})}const A={componentId:u,loadComponent:T};const P=`<div class="menu-button-language-mobile" id="button-language-mobile">
+`,h="buttonProductsMobile";function P(){document.querySelector(`#${h}`).innerHTML=A,document.querySelector("#button-products").addEventListener("click",()=>{document.getElementById("content-menu-products").style.display="flex",document.getElementById("links-button").style.display="none",document.getElementById("buttonLanguageMobile").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("content-menu-products").classList.toggle("show-content_button-products")})}const U={componentId:h,loadComponent:P};const D=`<div class="menu-button-language-mobile" id="button-language-mobile">
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
     <path
       d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1Zm8 11c0 .7-.1 1.4-.3 2-.6-1.5-1.6-3.1-3-4.7l1.8-1.8c1 1.3 1.5 2.8 1.5 4.5ZM6.5 6.5c1.3 0 3.6.8 6 2.9l-3.2 3.2C7.1 9.8 6.5 7.5 6.5 6.5Zm8.1 5c2.3 2.7 2.9 5 2.9 6-1.3 0-3.6-.8-6-2.9l3.1-3.1Zm1.9-6.1-1.9 1.9c-1.6-1.4-3.2-2.4-4.7-3 .7-.2 1.3-.3 2-.3 1.8 0 3.3.5 4.6 1.4ZM4 12c0-.7.1-1.4.3-2 .6 1.5 1.6 3.1 3 4.7l-1.8 1.8C4.5 15.2 4 13.7 4 12Zm3.5 6.6 1.9-1.9c1.6 1.4 3.2 2.4 4.7 3-.7.2-1.3.3-2 .3-1.8 0-3.3-.5-4.6-1.4Z"
@@ -395,8 +395,117 @@
     </div>
   </div>
 </div>
-`,h="buttonLanguageMobile";function z(){document.querySelector(`#${h}`).innerHTML=P,document.querySelector("#button-language-mobile").addEventListener("click",()=>{document.getElementById("links-button").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("button-language-mobile").style.display="none",document.getElementById("fullscreen-language-mobile").classList.toggle("show-content-mobile")})}const U={componentId:h,loadComponent:z},m="button-menu-mobile";function D(){document.querySelector(`#${m}`).innerHTML=I,document.querySelector("#button-hamburguer").addEventListener("click",()=>{document.getElementById("conteudo-botao").classList.toggle("force-content"),document.getElementById("links-button").style.display="block",document.getElementById("buttonLanguageMobile").style.display="flex",document.getElementById("button-products").style.display="flex",document.getElementById("content-menu-products").style.display="none",document.getElementById("button-language-mobile").style.display="flex",document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile"),document.getElementById("lista-drop").classList.remove("show"),document.getElementById("button-company-mobile").classList.remove("margin-force"),document.getElementById("html").classList.toggle("overflow-force")}),E.loadComponent(),A.loadComponent(),U.loadComponent()}const _={componentId:m,loadComponent:D},g="header";function F(){document.querySelector(`#${g}`).innerHTML=y,M.loadComponent(),k.loadComponent(),V.loadComponent(),_.loadComponent()}const i={componentId:g,loadComponent:F};const O=`=
-<main class="espaco"></main>
+`,m="buttonLanguageMobile";function _(){document.querySelector(`#${m}`).innerHTML=D,document.querySelector("#button-language-mobile").addEventListener("click",()=>{document.getElementById("links-button").style.display="none",document.getElementById("button-products").style.display="none",document.getElementById("button-language-mobile").style.display="none",document.getElementById("fullscreen-language-mobile").classList.toggle("show-content-mobile")})}const F={componentId:m,loadComponent:_},g="button-menu-mobile";function O(){document.querySelector(`#${g}`).innerHTML=$,document.querySelector("#button-hamburguer").addEventListener("click",()=>{document.getElementById("conteudo-botao").classList.toggle("force-content"),document.getElementById("links-button").style.display="block",document.getElementById("buttonLanguageMobile").style.display="flex",document.getElementById("button-products").style.display="flex",document.getElementById("content-menu-products").style.display="none",document.getElementById("button-language-mobile").style.display="flex",document.getElementById("hero").classList.toggle("display-none-force"),document.getElementById("main").classList.toggle("display-none-force"),document.getElementById("footer").classList.toggle("display-none-force"),document.getElementById("fullscreen-language-mobile").classList.remove("show-content-mobile"),document.getElementById("lista-drop").classList.remove("show"),document.getElementById("button-company-mobile").classList.remove("margin-force"),document.getElementById("html").classList.toggle("overflow-force")}),z.loadComponent(),U.loadComponent(),F.loadComponent()}const j={componentId:g,loadComponent:O},b="header";function R(){document.querySelector(`#${b}`).innerHTML=M,L.loadComponent(),V.loadComponent(),q.loadComponent(),j.loadComponent()}const i={componentId:b,loadComponent:R};const N='<div id="heroBoxContent"></div>';const G=`<div class="space-content">
+    <div class="container">
+        <div class="container-box">
+            <div class="container-itens">
+                <div class="top-itens-icons">
+                    <div class="icons-toplist-wrapper">
+                        <div class="icon-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                <path fill="#000" d="M6 16H2v4h4v-4zM11.5 12h-4v8h4v-8zM17 8h-4v12h4V8zM22.5 4h-4v16h4V4z">
+                                    <span class="icons-toplist1">Faça <br> viagens ou entregas</span>
+                            </svg>
+                        </div>
+                        <div class="icon-2" id="icon-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                <g transform="translate(1 3)">
+                                    <path fill="black"
+                                        d="M20 6l-1.5-4.6c-.3-.8-1-1.4-1.9-1.4H5.4c-.8 0-1.6.6-1.9 1.4L2 6H0v3h1v9h4v-2h12v2h4V9h1V6h-2zm-3 7H4v-1h4V9H4.2l2-6h9.7l2 6H14v3h4v1h-1z" />
+                                </g>
+                            </svg>
+                            <span class="icons-toplist2">Viajar</span>
+                        </div>
+                        <div class="icon-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
+                                <g fill="black" transform="translate(.5 1)">
+                                    <path fill-rule="evenodd"
+                                        d="M17.91 1.41l3.17 3.17a4.834 4.834 0 010 6.84L16 16.5 6 6.5l5.08-5.09C12.03.47 13.26 0 14.5 0c1.24 0 2.47.47 3.41 1.41zM12.75 7l2.75 2.75 2.25-2.25L15 4.75 12.75 7z"
+                                        clip-rule="evenodd" />
+                                    <path d="M1.5 20L0 18.5l7.25-7.25 3.5 3.5L5.5 20h-4z" />
+                                </g>
+                            </svg>
+                            <span class="icons-toplist3">Alugue seus veiculos</span>
+                        </div>
+                    </div>
+                    <div class="line-wrapper">
+                        <span class="horizontal-line-subtext1"></span>
+                    </div>
+                </div>
+                <div class="content-box1">
+                    <div class="texts-tabpanel1">
+                        <h1 class="title-tabpanel1">Assuma o comando e ganhe</h1>
+                        <h2 class="subtitle-tabpanel1">
+                            Dirija na plataforma com a maior rede de usuarios ativos
+                        </h2>
+                        <a href="#"><button class="btn-tabpanel1">Cadastre-se para dirigir</button></a>
+                        <a class="subtext-button1">
+                            Saiba mais sobre como dirigir e fazer entregas
+                        </a>
+                    </div>
+                </div>
+                <div class="content-box2">
+                    <div class="texts-tabpanel2">
+                        <h1 class="title-tabpanel2">
+                            Solicite a viagem agora mesmo
+                        </h1>
+                    </div>
+                    <div class="inputs-second-content-hero">
+                        <div class="first-input">
+                            <input type="text" class="inputs-boxs-hero" placeholder="Enter location" id="first-input" />
+                            <button class="svg-input">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon">
+                                    <title>search</title>
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm5-2a5 5 0 1 1-10 0 5 5 0 0 1 10 0Z"
+                                        fill="black"></path>
+                                </svg>
+                            </button>
+                            <div class="svg-input-location-hero">
+                                <svg width="2.5em" height="2.5em" viewBox="0 0 24 24" fill="none" tabindex="0"
+                                    role="button" class="pe-location-fetch css-bOZeEP">
+                                    <title>Navigate right up</title>
+                                    <path d="M10.5 13.5.5 11 21 3l-8 20.5-2.5-10Z" fill="black"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span class="vertical-line"></span>
+                        <div class="second-input">
+                            <input type="text" class="inputs-boxs-hero" placeholder="Enter destination"
+                                id="second-input" />
+                            <div class="svg-input">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" data-baseweb="icon">
+                                    <title>search</title>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14 10h-4v4h4v-4ZM7 7v10h10V7H7Z"
+                                        fill="black"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttons-content-box2">
+                        <button class="btn-tabpanel2">Solicitar Agora</button>
+                        <button class="btn-tabpanel2 inverse">Agendar para mais tarde</button>
+                    </div>
+                </div>
+                <div class="content-box3">
+                    <div class="texts-tabpanel3">
+                        <h1 class="title-tabpanel3">
+                            Ganhe dinheiro alugando seu carro
+                        </h1>
+                        <h2 class="subtitle-tabpanel3">
+                            Conecte-se com milhares de motoristas parceiros e ganhe mais por semana com as ferramentas gratuitas de gerenciamento da uber para locadoras de veículos
+                        </h2>
+                    </div>
+                    <div class="button-tabpanel3">
+                        <button class="btn-tabpanel3">
+                            Começar
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>`,f="heroBoxContent";function Q(){document.querySelector(`#${f}`).innerHTML=G,document.querySelector(".icon-1").addEventListener("click",()=>{document.querySelector(".content-box1").style.display="flex",document.querySelector(".content-box2").style.display="none",document.querySelector(".content-box3").style.display="none",document.querySelector(".container").style.backgroundColor="black",document.querySelector(".container").classList.remove("background-content-box-2"),document.querySelector(".container").classList.remove("background-content-box-3"),document.querySelector(".icons-toplist1").style.borderBottom="5px solid #000",document.querySelector(".icons-toplist2").style.borderBottom="none",document.querySelector(".icons-toplist3").style.borderBottom="none"}),document.querySelector(".icon-2").addEventListener("click",()=>{document.querySelector(".content-box1").style.display="none",document.querySelector(".content-box2").style.display="flex",document.querySelector(".content-box3").style.display="none",document.querySelector(".container").classList.add("background-content-box-2"),document.querySelector(".container").classList.remove("background-content-box-3"),document.querySelector(".container").classList.remove("background-content-box-1"),document.querySelector(".icons-toplist2").style.borderBottom="5px solid #000",document.querySelector(".icons-toplist1").style.borderBottom="none",document.querySelector(".icons-toplist3").style.borderBottom="none"}),document.querySelector(".icon-3").addEventListener("click",()=>{document.querySelector(".content-box1").style.display="none",document.querySelector(".content-box2").style.display="none",document.querySelector(".content-box3").style.display="flex",document.querySelector(".container").style.backgroundColor="brown",document.querySelector(".container").classList.add("background-content-box-3"),document.querySelector(".container").classList.remove("background-content-box-2"),document.querySelector(".container").classList.remove("background-content-box-1"),document.querySelector(".icons-toplist3").style.borderBottom="5px solid #000",document.querySelector(".icons-toplist1").style.borderBottom="none",document.querySelector(".icons-toplist2").style.borderBottom="none"})}const J={componentId:f,loadComponent:Q},y="hero";function W(){document.querySelector(`#${y}`).innerHTML=N,J.loadComponent()}const a={componentId:y,loadComponent:W};const K=`
 <section class="content-initial">
   <div class="content-box">
     <img
@@ -508,14 +617,13 @@
             </svg>
           </div>
         </div>
-        <button class="btn-second-content btn-content-initial">
-          Get Started
-        </button>
+        <button class="btn-second-content btn-content-initial">Começar</button>
       </div>
     </div>
     <img
       src="/rideshare-square-mobile.webp"
       alt="Desenho de uma mulher saindo de um carro em uma cidade"
+      class="image-second-content-mobile"
     />
   </div>
 </section>
@@ -546,6 +654,7 @@
     <img
       src="/u4b-square-mobile.webp"
       alt="Desenho de uma mulher saindo do carro chegando a um aeroporto"
+      class="image-third-content-mobile"
     />
   </div>
 </section>
@@ -559,12 +668,12 @@
     <div class="texts-fourth-content">
       <h1 class="title-fourth-content">Ganhe dinheiro alugando seu carro</h1>
       <h2 class="subtitle-fourth-content">
-        Conecte-se com milhares de motoristas parceiros e ganhe mais por semana com as ferramentas gratuitas de gerenciamento da Uber para locadores de veículos.
+        Conecte-se com milhares de motoristas parceiros e ganhe mais por semana
+        com as ferramentas gratuitas de gerenciamento da Uber para locadores de
+        veículos.
       </h2>
       <div class="button-fourth-content">
-        <button class="btn-fourth-content btn-content-initial">
-          Começar
-        </button>
+        <button class="btn-fourth-content btn-content-initial">Começar</button>
       </div>
     </div>
     <im
@@ -595,7 +704,9 @@
           </div>
           <div class="texts-buttons-download">
             <h1 class="title-button-download">Baixe o app da Uber</h1>
-            <h2 class="subtitle-button-download">Leia o código QR para baixar o app</h2>
+            <h2 class="subtitle-button-download">
+              Leia o código QR para baixar o app
+            </h2>
             <div class="icon-arrow">
               <svg
                 aria-hidden="true"
@@ -630,7 +741,9 @@
           </div>
           <div class="texts-buttons-download">
             <h1 class="title-button-download">Baixe o app da Uber</h1>
-            <h2 class="subtitle-button-download">Leia o código QR para baixar o app</h2>
+            <h2 class="subtitle-button-download">
+              Leia o código QR para baixar o app
+            </h2>
             <div class="icon-arrow">
               <svg
                 aria-hidden="true"
@@ -654,7 +767,7 @@
     </div>
   </div>
 </section>
-`,b="main";function j(){document.querySelector(`#${b}`).innerHTML=O;let o=document.getElementById("first-input"),t=document.getElementById("second-input");o.addEventListener("click",()=>{o.classList.add("style-click")}),o.addEventListener("focusout",()=>{o.classList.remove("style-click")}),t.addEventListener("click",()=>{t.classList.add("style-click")}),t.addEventListener("focusout",()=>{t.classList.remove("style-click")})}const a={componentId:b,loadComponent:j};const R=`<footer class="footer-space">
+`,w="main";function X(){document.querySelector(`#${w}`).innerHTML=K;let o=document.getElementById("first-input"),t=document.getElementById("second-input");o.addEventListener("click",()=>{o.classList.add("style-click")}),o.addEventListener("focusout",()=>{o.classList.remove("style-click")}),t.addEventListener("click",()=>{t.classList.add("style-click")}),t.addEventListener("focusout",()=>{t.classList.remove("style-click")})}const c={componentId:w,loadComponent:X};const Y=`<footer class="footer-space">
   <div class="content-footer">
     <div class="toplist">
       <div class="left-itens">
@@ -797,8 +910,9 @@
         <span class="texts-end-footer">Terms</span>
     </div>
 </footer>
-`,f="footer";function G(){document.querySelector(`#${f}`).innerHTML=R}const c={componentId:f,loadComponent:G};async function N(){document.querySelector("#app").innerHTML=`
+`,C="footer";function nn(){document.querySelector(`#${C}`).innerHTML=Y}const d={componentId:C,loadComponent:nn};async function en(){document.querySelector("#app").innerHTML=`
     <div id="${i.componentId}"></div>
     <div id="${a.componentId}"></div>
     <div id="${c.componentId}"></div>
-  `,i.loadComponent(),a.loadComponent(),c.loadComponent()}N();
+    <div id="${d.componentId}"></div>
+  `,i.loadComponent(),a.loadComponent(),c.loadComponent(),d.loadComponent()}en();
